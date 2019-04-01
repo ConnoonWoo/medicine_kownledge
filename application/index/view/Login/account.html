@@ -1,0 +1,77 @@
+{include file='Common/_head'}
+<!---->
+<div class="container">
+	  <ol class="breadcrumb">
+		  <li><a href="{:url('Index/index')}">主页</a></li>
+		  <li class="active">注册</li>
+		 </ol>
+	 <div class="registration">
+		 <div class="registration_left">
+			 <h2>开始 <span> 注册新账户 </span></h2> 
+			 <div class="registration_form">
+			 <!-- Form -->
+				<form id="registration_form" action="contact.php" method="post">
+					<div>
+						<label>
+							<input placeholder="first name:" type="text" tabindex="1" required autofocus>
+						</label>
+					</div>
+					<div>
+						<label>
+							<input placeholder="last name:" type="text" tabindex="2" required autofocus>
+						</label>
+					</div>
+					<div>
+						<label>
+							<input placeholder="email address:" type="email" tabindex="3" required>
+						</label>
+					</div>
+					<div>
+						<label>
+							<input placeholder="Mobile:" type="text" tabindex="3" required>
+						</label>
+					</div>								
+					<div>
+						<label>
+							<input placeholder="password" type="password" tabindex="4" required>
+						</label>
+					</div>						
+					<div>
+						<label>
+							<input placeholder="retype password" type="password" tabindex="4" required>
+						</label>
+					</div>	
+					<div>
+						<input type="submit" value="注册新账户" id="register-submit">
+					</div>
+				</form>
+				<!-- /Form -->
+			 </div>
+		 </div>
+		 <div class="registration_left">
+			 <h2>已有账户</h2>
+			 <div class="registration_form">
+			 <!-- Form -->
+				<form id="registration_form" action="contact.php" method="post">
+					<div>
+						<label>
+							<input placeholder="email:" type="email" tabindex="3" required>
+						</label>
+					</div>
+					<div>
+						<label>
+							<input placeholder="password" type="password" tabindex="4" required>
+						</label>
+					</div>						
+					<div>
+						<input type="submit" value="登录" id="register-submit">
+					</div>
+				</form>
+			 <!-- /Form -->
+			 </div>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!-- end registration -->
+{include file='Common/_footer'}

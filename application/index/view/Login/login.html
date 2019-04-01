@@ -1,0 +1,31 @@
+{include file='Common/_head'}
+<!---->
+<div class="login_sec">
+	 <div class="container">
+		 <ol class="breadcrumb">
+		  <li><a href="{:url('Index/index')}">主页</a></li>
+		  <li class="active">登录</li>
+		 </ol>
+		 <h2>登录</h2>
+		 <div class="col-md-6 log">			 
+				 <p>欢迎,请填写账户信息登录</p>
+				 <p>如果您没有账户, <a href="{:url('Login/account')}">请点击这里</a></p>
+				 <form>
+					 <h5>用户名：</h5>	
+					 <input type="text" value="">
+					 <h5>密码：</h5>
+					 <input type="password" value="">					
+					 <input type="submit" value="登录">
+				 </form>				 
+		 </div>
+		  <div class="col-md-6 login-right">
+			  	<h3>注册新账户</h3>
+				<p>一个账户，便是与世界的距离。</p>
+				<p>登录网站，发布新的药材，发布新的生产经验。与开发者进行深入的交流。在等什么，加入我们。</p>
+				<a class="acount-btn" href="{:url('Login/account')}">创建新账户</a>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!---->
+{include file='Common/_footer'}
