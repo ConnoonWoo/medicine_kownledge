@@ -1,0 +1,1311 @@
+---------------------------------------------------------------
+[ 2019-04-01T23:40:34+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[ error ] [1]Class 'Think\controller' not found
+---------------------------------------------------------------
+[ 2019-04-01T23:40:54+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.114949s] [吞吐率：8.70req/s] [内存消耗：1,112.22kb] [文件加载：37]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'Think\controller' not found[F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php:4]
+---------------------------------------------------------------
+[ 2019-04-01T23:42:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.064564s] [吞吐率：15.49req/s] [内存消耗：1,435.48kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/css/bootstrap.css
+[运行时间：0.065378s] [吞吐率：15.30req/s] [内存消耗：1,321.02kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/images/logo1.png
+[运行时间：0.044014s] [吞吐率：22.72req/s] [内存消耗：1,321.04kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/images/banner2.jpg
+[运行时间：0.042241s] [吞吐率：23.67req/s] [内存消耗：1,321.04kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/images/banner1.jpg
+[运行时间：0.046102s] [吞吐率：21.69req/s] [内存消耗：1,321.04kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/images/banner3.jpg
+[运行时间：0.040726s] [吞吐率：24.55req/s] [内存消耗：1,321.04kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:27+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/js/jquery-1.11.1.min.js
+[运行时间：0.066967s] [吞吐率：14.93req/s] [内存消耗：1,320.88kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:27+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/css/style.css
+[运行时间：0.065822s] [吞吐率：15.19req/s] [内存消耗：1,321.06kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:27+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/css/megamenu.css
+[运行时间：0.069029s] [吞吐率：14.49req/s] [内存消耗：1,321.09kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:27+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/js/megamenu.js
+[运行时间：0.052263s] [吞吐率：19.13req/s] [内存消耗：1,321.05kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:27+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/js/responsiveslides.min.js
+[运行时间：0.042018s] [吞吐率：23.80req/s] [内存消耗：1,320.98kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:42:28+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/images/favicon.ico
+[运行时间：0.051555s] [吞吐率：19.40req/s] [内存消耗：1,321.54kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:48:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.177149s] [吞吐率：5.64req/s] [内存消耗：1,435.78kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:48:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/images/logo1.png
+[运行时间：0.051035s] [吞吐率：19.59req/s] [内存消耗：1,321.04kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:48:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/images/banner2.jpg
+[运行时间：0.056201s] [吞吐率：17.79req/s] [内存消耗：1,321.04kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:48:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/images/banner1.jpg
+[运行时间：0.046346s] [吞吐率：21.58req/s] [内存消耗：1,321.04kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:48:26+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/images/banner3.jpg
+[运行时间：0.057048s] [吞吐率：17.53req/s] [内存消耗：1,321.04kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:49:10+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.136398s] [吞吐率：7.33req/s] [内存消耗：1,435.91kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:49:24+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/map.html
+[运行时间：0.060920s] [吞吐率：16.41req/s] [内存消耗：1,321.56kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:50:39+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.050012s] [吞吐率：20.00req/s] [内存消耗：1,428.55kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:50:40+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.035744s] [吞吐率：27.98req/s] [内存消耗：1,298.43kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:51:44+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.091667s] [吞吐率：10.91req/s] [内存消耗：1,425.07kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:51:44+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.047464s] [吞吐率：21.07req/s] [内存消耗：1,298.41kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:51:45+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.053764s] [吞吐率：18.60req/s] [内存消耗：1,298.41kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:55:13+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.068027s] [吞吐率：14.70req/s] [内存消耗：1,472.95kb] [文件加载：43]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:55:14+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.057744s] [吞吐率：17.32req/s] [内存消耗：1,346.20kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:55:16+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/map/index.html
+[运行时间：0.050591s] [吞吐率：19.77req/s] [内存消耗：1,469.65kb] [文件加载：43]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'map',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Map->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Map.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Map\map.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:55:28+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/map/index.html
+[运行时间：0.053824s] [吞吐率：18.58req/s] [内存消耗：1,346.66kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'map',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Map->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Map.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Map\map.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:55:52+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/map/index.html
+[运行时间：0.045180s] [吞吐率：22.13req/s] [内存消耗：1,469.92kb] [文件加载：43]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'map',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Map->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Map.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Map\map.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:55:55+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.062339s] [吞吐率：16.04req/s] [内存消耗：1,473.24kb] [文件加载：43]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/map/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:25+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.052562s] [吞吐率：19.03req/s] [内存消耗：1,473.52kb] [文件加载：43]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/map/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:25+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.044703s] [吞吐率：22.37req/s] [内存消耗：1,346.73kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/map/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:25+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/index/index.html
+[运行时间：0.055660s] [吞吐率：17.97req/s] [内存消耗：1,346.73kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/map/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:27+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/map/index.html
+[运行时间：0.050089s] [吞吐率：19.96req/s] [内存消耗：1,469.87kb] [文件加载：43]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'map',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Map->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Map.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Map\map.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:28+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/index.html
+[运行时间：0.053015s] [吞吐率：18.86req/s] [内存消耗：1,438.00kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/map/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Medicine->index[ F:\phpstudy\WWW\aaaaa\application\index\controller\Medicine.php ]
+[ info ] [ VIEW ] F:\phpstudy\WWW\aaaaa\public/../application/index\view\Medicine\medicine.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:28+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/css/bootstrap.css
+[运行时间：0.063610s] [吞吐率：15.72req/s] [内存消耗：1,321.20kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:29+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/images/logo.png
+[运行时间：0.036616s] [吞吐率：27.31req/s] [内存消耗：1,321.11kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:29+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/images/banner2.jpg
+[运行时间：0.040386s] [吞吐率：24.76req/s] [内存消耗：1,321.23kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:30+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/js/jquery-1.11.1.min.js
+[运行时间：0.112318s] [吞吐率：8.90req/s] [内存消耗：1,321.05kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:30+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/js/responsiveslides.min.js
+[运行时间：0.071362s] [吞吐率：14.01req/s] [内存消耗：1,321.22kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:30+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/css/style.css
+[运行时间：0.079349s] [吞吐率：12.60req/s] [内存消耗：1,321.10kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:30+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/css/megamenu.css
+[运行时间：0.064512s] [吞吐率：15.50req/s] [内存消耗：1,321.09kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:30+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/js/megamenu.js
+[运行时间：0.067972s] [吞吐率：14.71req/s] [内存消耗：1,321.02kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:30+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/js/responsiveslides.min.js
+[运行时间：0.043316s] [吞吐率：23.09req/s] [内存消耗：1,321.09kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:30+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/images/banner2.jpg
+[运行时间：0.082525s] [吞吐率：12.12req/s] [内存消耗：1,321.23kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-01T23:59:30+08:00 ] 0.0.0.0 GET localhost/aaaaa/public/index.php/index/medicine/images/favicon.ico
+[运行时间：0.066883s] [吞吐率：14.95req/s] [内存消耗：1,321.23kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpstudy\WWW\aaaaa\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'medicine',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.726740477.1537545692; pgv_pvi=4977350656; PHPSESSID=2u5d6bot8onok4l6l9i0ptj7a4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/aaaaa/public/index.php/index/medicine/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
