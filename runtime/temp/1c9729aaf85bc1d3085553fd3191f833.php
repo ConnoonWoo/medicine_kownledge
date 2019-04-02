@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:74:"F:\phpstudy\WWW\aaaaa\public/../application/index\view\Kown\kownledge.html";i:1554135052;s:62:"F:\phpstudy\WWW\aaaaa\application\index\view\Common\_head.html";i:1554135597;s:64:"F:\phpstudy\WWW\aaaaa\application\index\view\Common\_footer.html";i:1554133872;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:97:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554219607;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554219607;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -233,54 +233,56 @@
 		</div>
 	</div>
 </div>
-<!---->
-<div class="top-sellers">
+<div class="content">
 	 <div class="container">
-	 	<h3 style="margin-top:50px">中药鉴别</h3>
-	 	<h5>　　藏药起源于西藏，是中华民族——藏族的传统文化</h5>
+		 <div class="slider">
+				<ul class="rslides" id="slider1">
+				  <li><img src="/aaaaa/public/static/images/banner2.jpg" alt=""></li>
+				  <li><img src="/aaaaa/public/static/images/banner1.jpg" alt=""></li>
+				  <li><img src="/aaaaa/public/static/images/banner3.jpg" alt=""></li>
+				</ul>
+		 </div>
+	 </div>
+</div>
+
+<div class="content_center">
+	 <div class="container">
 		 <div class="sofas">
-		 	<div style="margin-top:30px;">
-		 		<a href="<?php echo url('Kown/index_more'); ?>">
-				 <div class="col-md-5 ">
-					 <img src="/aaaaa/public/static/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
+			 <div class="col-md-7 sofas">
+			 	<div style="height:300px">
+				 	<a href="#">最新</a>
+					<div class="h_nav" style="margin-left:20px">
+						<ul>
+							<li><a href="products.html">Single BedSingle BedSingle BedSingle Bed</a></li>
+							<li><a href="products.html">Poster Bed</a></li>
+							<li><a href="products.html">Sofa Cum Bed</a></li>
+							<li><a href="products.html">Bunk Bed</a></li>
+							<li><a href="products.html">King Size Bed</a></li>
+							<li><a href="products.html">Metal Bed</a></li>
+							<li><a href="products.html">Metal Bed</a></li>
+						</ul>	
+					</div>			
+			 	</div>
+			 	<div style="height:300px">
+				 	<a href="products.html">最热</a>
+				 	<div class="h_nav" style="margin-left:20px">
+						<ul>
+							<li><a href="products.html">Single BedSingle BedSingle BedSingle Bed</a></li>
+							<li><a href="products.html">Poster Bed</a></li>
+							<li><a href="products.html">Sofa Cum Bed</a></li>
+							<li><a href="products.html">Bunk Bed</a></li>
+							<li><a href="products.html">King Size Bed</a></li>
+							<li><a href="products.html">Metal Bed</a></li>
+							<li><a href="products.html">Metal Bed</a></li>
+						</ul>	
+					</div>	
+			 	</div>
 			 </div>
-			
-			<div style="margin-top:30px;">
-				<a href="<?php echo url('Kown/index_more'); ?>">
-				 <div class="col-md-5 ">
-					 <img src="/aaaaa/public/static/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
-			</div>
-
-			<div style="margin-top:30px;">
-				 <a href="<?php echo url('Kown/index_more'); ?>">
-				 <div class="col-md-5 ">
-					 <img src="/aaaaa/public/static/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
+			 <div class="col-md-5"  style="height:600px">
+				 <a href="products.html">资源地图</a>
+				 <div id="baidu_map" style="height:570px;"></div>
 			 </div>
-
+			 <div class="clearfix"></div>
 		 </div>
 	 </div>
 </div>
