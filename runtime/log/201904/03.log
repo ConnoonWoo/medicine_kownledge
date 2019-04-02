@@ -175,3 +175,144 @@
 [ info ] [ VIEW ] /Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html [ array (
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T00:04:50+08:00 ] 0.0.0.0 GET localhost/medicine_kownledge/public/index.php/index/index/index
+[运行时间：0.016885s] [吞吐率：59.22req/s] [内存消耗：1,599.19kb] [文件加载：41]
+[ info ] [ LANG ] /Library/WebServer/Documents/medicine_kownledge/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Library/WebServer/Documents/medicine_kownledge/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T00:05:07+08:00 ] 0.0.0.0 GET localhost/medicine_kownledge/public/index.php/index/index/index
+[运行时间：0.012618s] [吞吐率：79.25req/s] [内存消耗：1,598.08kb] [文件加载：41]
+[ info ] [ LANG ] /Library/WebServer/Documents/medicine_kownledge/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Library/WebServer/Documents/medicine_kownledge/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T00:05:20+08:00 ] 0.0.0.0 GET localhost/medicine_kownledge/public/index.php/index/index/index
+[运行时间：0.015311s] [吞吐率：65.31req/s] [内存消耗：1,598.08kb] [文件加载：41]
+[ info ] [ LANG ] /Library/WebServer/Documents/medicine_kownledge/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Library/WebServer/Documents/medicine_kownledge/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T00:05:54+08:00 ] 0.0.0.0 GET localhost/medicine_kownledge/public/index.php/index/index/index
+[运行时间：0.018954s] [吞吐率：52.76req/s] [内存消耗：1,598.69kb] [文件加载：41]
+[ info ] [ LANG ] /Library/WebServer/Documents/medicine_kownledge/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Library/WebServer/Documents/medicine_kownledge/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T00:06:12+08:00 ] 0.0.0.0 GET localhost/medicine_kownledge/public/index.php/index/index/index
+[运行时间：0.013679s] [吞吐率：73.11req/s] [内存消耗：1,598.69kb] [文件加载：41]
+[ info ] [ LANG ] /Library/WebServer/Documents/medicine_kownledge/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Library/WebServer/Documents/medicine_kownledge/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
