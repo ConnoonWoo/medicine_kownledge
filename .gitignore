@@ -2,3 +2,4 @@
 *.log
 thinkphp
 composer.lock
+runtime
