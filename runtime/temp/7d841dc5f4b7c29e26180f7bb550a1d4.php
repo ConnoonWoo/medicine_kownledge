@@ -1,18 +1,18 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"F:\phpstudy\WWW\aaaaa\public/../application/index\view\Map\map.html";i:1554134051;s:62:"F:\phpstudy\WWW\aaaaa\application\index\view\Common\_head.html";i:1554134888;s:64:"F:\phpstudy\WWW\aaaaa\application\index\view\Common\_footer.html";i:1554133872;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:103:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Medicine/medicine.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554219607;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554219607;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
 <title>中药材知识系统</title>
-<link href="/aaaaa/public/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<script type='text/javascript' src="/aaaaa/public/static/js/jquery-1.11.1.min.js"></script>
-<link href="/aaaaa/public/static/css/style.css" rel='stylesheet' type='text/css' />
+<link href="/medicine_kownledge/public/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script type='text/javascript' src="/medicine_kownledge/public/static/js/jquery-1.11.1.min.js"></script>
+<link href="/medicine_kownledge/public/static/css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="/aaaaa/public/static/images/favicon.ico" type="image/x-icon">
-<link href="/aaaaa/public/static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="/aaaaa/public/static/js/megamenu.js"></script>
+<link rel="icon" href="/medicine_kownledge/public/static/images/favicon.ico" type="image/x-icon">
+<link href="/medicine_kownledge/public/static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/medicine_kownledge/public/static/js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-  <script src="/aaaaa/public/static/js/responsiveslides.min.js"></script>
+  <script src="/medicine_kownledge/public/static/js/responsiveslides.min.js"></script>
 <script>
     $(function () {
       $("#slider1").responsiveSlides({
@@ -28,14 +28,32 @@
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Fmw0Nn2iPgfKKVkdaNVBKqWWcO3P0uyK"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
 <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+<link href="/medicine_kownledge/public/static/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="/medicine_kownledge/public/static/css/etalage.css">
+<script src="/medicine_kownledge/public/static/js/jquery.etalage.min.js"></script>
+<script>
+			jQuery(document).ready(function($){
 
+				$('#etalage').etalage({
+					thumb_image_width: 300,
+					thumb_image_height: 400,
+					source_image_width: 900,
+					source_image_height: 1200,
+					show_hint: true,
+					click_callback: function(image_anchor, instance_id){
+						alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+					}
+				});
+
+			});
+		</script>
 </head>
 <body>
 
 <div class="header_top">
 	 <div class="container">
 		 <div class="logo">
-		 	<a href="index.html"><img src="/aaaaa/public/static/images/logo1.png" alt=""/></a></div>
+		 	<a href="index.html"><img src="/medicine_kownledge/public/static/images/logo1.png" alt=""/></a></div>
 		 <div class="header_right">中药材知识CHINESE MEDICINE</div>
 	 </div>
 </div>
@@ -215,9 +233,80 @@
 		</div>
 	</div>
 </div>
-
-<div class="content">
-	 <div class="container" id="baidu_map" style="height:700px;margin-top:20px;margin-bottom:20px">
+<!---->
+<div class="top-sellers">
+	 <div class="container">
+		 <h3 style="margin-top:50px">藏药</h3>
+		 <h5>　　藏药起源于西藏，是中华民族——藏族的传统文化</h5>
+		 <div class="seller-grids">
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="medicine_more.html">Carnival Doublecot Bed</a></h4>
+				 <span>ID: DB4790</span>
+				 <p>Rs. 25000/-</p>
+			 </div>
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Home Bar Furniture</a></h4>
+				 <span>ID: BR4822</span>
+				 <p>Rs. 5000/-</p>
+			 </div>
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">L-shaped Fabric Sofa set</a></h4>
+				 <span>ID: LF8560</span>
+				 <p>Rs. 45000/-</p>
+			 </div>
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Ritz Glass Dinning Table </a></h4>
+				 <span>ID: DB4790</span>
+				 <p>Rs. 18000/-</p>
+			 </div>
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Carnival Doublecot Bed</a></h4>
+				 <span>ID: DB4790</span>
+				 <p>Rs. 25000/-</p>
+			 </div>
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Home Bar Furniture</a></h4>
+				 <span>ID: BR4822</span>
+				 <p>Rs. 5000/-</p>
+			 </div>
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">L-shaped Fabric Sofa set</a></h4>
+				 <span>ID: LF8560</span>
+				 <p>Rs. 45000/-</p>
+			 </div>
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Ritz Glass Dinning Table </a></h4>
+				 <span>ID: DB4790</span>
+				 <p>Rs. 18000/-</p>
+			 </div>
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Carnival Doublecot Bed</a></h4>
+				 <span>ID: DB4790</span>
+				 <p>Rs. 25000/-</p>
+			 </div>
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Home Bar Furniture</a></h4>
+				 <span>ID: BR4822</span>
+				 <p>Rs. 5000/-</p>
+			 </div>
+			 <div class="col-md-3 seller-grid">
+				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
+				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">L-shaped Fabric Sofa set</a></h4>
+				 <span>ID: LF8560</span>
+				 <p>Rs. 45000/-</p>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
 	 </div>
 </div>
 

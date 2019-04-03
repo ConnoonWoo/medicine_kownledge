@@ -1,18 +1,18 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:73:"F:\phpstudy\WWW\aaaaa\public/../application/index\view\Login\account.html";i:1554135098;s:62:"F:\phpstudy\WWW\aaaaa\application\index\view\Common\_head.html";i:1554135597;s:64:"F:\phpstudy\WWW\aaaaa\application\index\view\Common\_footer.html";i:1554133872;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:97:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Login/login.html";i:1554306365;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554307097;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554303203;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
 <title>中药材知识系统</title>
-<link href="/aaaaa/public/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<script type='text/javascript' src="/aaaaa/public/static/js/jquery-1.11.1.min.js"></script>
-<link href="/aaaaa/public/static/css/style.css" rel='stylesheet' type='text/css' />
+<link href="/medicine_kownledge/public/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script type='text/javascript' src="/medicine_kownledge/public/static/js/jquery-1.11.1.min.js"></script>
+<link href="/medicine_kownledge/public/static/css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="/aaaaa/public/static/images/favicon.ico" type="image/x-icon">
-<link href="/aaaaa/public/static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="/aaaaa/public/static/js/megamenu.js"></script>
+<link rel="icon" href="/medicine_kownledge/public/static/images/favicon.ico" type="image/x-icon">
+<link href="/medicine_kownledge/public/static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/medicine_kownledge/public/static/js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-  <script src="/aaaaa/public/static/js/responsiveslides.min.js"></script>
+  <script src="/medicine_kownledge/public/static/js/responsiveslides.min.js"></script>
 <script>
     $(function () {
       $("#slider1").responsiveSlides({
@@ -28,9 +28,9 @@
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Fmw0Nn2iPgfKKVkdaNVBKqWWcO3P0uyK"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
 <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
-<link href="/aaaaa/public/static/css/form.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="/aaaaa/public/static/css/etalage.css">
-<script src="/aaaaa/public/static/js/jquery.etalage.min.js"></script>
+<link href="/medicine_kownledge/public/static/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="/medicine_kownledge/public/static/css/etalage.css">
+<script src="/medicine_kownledge/public/static/js/jquery.etalage.min.js"></script>
 <script>
 			jQuery(document).ready(function($){
 
@@ -53,7 +53,7 @@
 <div class="header_top">
 	 <div class="container">
 		 <div class="logo">
-		 	<a href="index.html"><img src="/aaaaa/public/static/images/logo1.png" alt=""/></a></div>
+		 	<a href="index.html"><img src="/medicine_kownledge/public/static/images/logo1.png" alt=""/></a></div>
 		 <div class="header_right">中药材知识CHINESE MEDICINE</div>
 	 </div>
 </div>
@@ -187,7 +187,7 @@
 						</div>
 	    			</div>
 				</li>
-				<li><a class="color6" href="<?php echo url('Login/index'); ?>">登录/注册</a></li>
+				<?php if(\think\Session::get('name') != ""): ?>
 				<li><a class="color7" href="#">登录后功能</a>
 					<div class="megapanel">
 						<div class="row">
@@ -221,7 +221,12 @@
 							</div>
 						</div>
 	    			</div>
-				</li>				
+				</li>
+				<li><a class="color6" href="<?php echo url('Login/login_out'); ?>"><?php echo \think\Session::get('name'); ?></a></li>
+				<?php else: ?>
+				<li><a class="color6" href="<?php echo url('Login/index'); ?>">登录/注册</a></li>
+				<?php endif; ?>
+
 			</ul> 
 		    <div class="search">
 			 <form>
@@ -234,80 +239,34 @@
 	</div>
 </div>
 <!---->
-<div class="container">
-	  <ol class="breadcrumb">
+<div class="login_sec">
+	 <div class="container">
+		 <ol class="breadcrumb">
 		  <li><a href="<?php echo url('Index/index'); ?>">主页</a></li>
-		  <li class="active">注册</li>
+		  <li class="active">登录</li>
 		 </ol>
-	 <div class="registration">
-		 <div class="registration_left">
-			 <h2>开始 <span> 注册新账户 </span></h2> 
-			 <div class="registration_form">
-			 <!-- Form -->
-				<form id="registration_form" action="contact.php" method="post">
-					<div>
-						<label>
-							<input placeholder="first name:" type="text" tabindex="1" required autofocus>
-						</label>
-					</div>
-					<div>
-						<label>
-							<input placeholder="last name:" type="text" tabindex="2" required autofocus>
-						</label>
-					</div>
-					<div>
-						<label>
-							<input placeholder="email address:" type="email" tabindex="3" required>
-						</label>
-					</div>
-					<div>
-						<label>
-							<input placeholder="Mobile:" type="text" tabindex="3" required>
-						</label>
-					</div>								
-					<div>
-						<label>
-							<input placeholder="password" type="password" tabindex="4" required>
-						</label>
-					</div>						
-					<div>
-						<label>
-							<input placeholder="retype password" type="password" tabindex="4" required>
-						</label>
-					</div>	
-					<div>
-						<input type="submit" value="注册新账户" id="register-submit">
-					</div>
-				</form>
-				<!-- /Form -->
-			 </div>
+		 <h2>登录</h2>
+		 <div class="col-md-6 log">			 
+				 <p>欢迎,请填写账户信息登录</p>
+				 <p>如果您没有账户, <a href="<?php echo url('Login/account'); ?>">请点击这里</a></p>
+				 <form action="<?php echo url('Login/login_in'); ?>" method="post">
+					 <h5>用户名：</h5>	
+					 <input type="text" placeholder="email:" name="user_name" value="">
+					 <h5>密码：</h5>
+					 <input type="password" placeholder="password" name="password" value="">
+					 <input type="submit" value="登录">
+				 </form>				 
 		 </div>
-		 <div class="registration_left">
-			 <h2>已有账户</h2>
-			 <div class="registration_form">
-			 <!-- Form -->
-				<form id="registration_form" action="contact.php" method="post">
-					<div>
-						<label>
-							<input placeholder="email:" type="email" tabindex="3" required>
-						</label>
-					</div>
-					<div>
-						<label>
-							<input placeholder="password" type="password" tabindex="4" required>
-						</label>
-					</div>						
-					<div>
-						<input type="submit" value="登录" id="register-submit">
-					</div>
-				</form>
-			 <!-- /Form -->
-			 </div>
+		  <div class="col-md-6 login-right">
+			  	<h3>注册新账户</h3>
+				<p>一个账户，便是与世界的距离。</p>
+				<p>登录网站，发布新的药材，发布新的生产经验。与开发者进行深入的交流。在等什么，加入我们。</p>
+				<a class="acount-btn" href="<?php echo url('Login/account'); ?>">创建新账户</a>
 		 </div>
 		 <div class="clearfix"></div>
 	 </div>
 </div>
-<!-- end registration -->
+<!---->
 <div class="footer-content">
 	 <div class="container">
 		 <div class="ftr-grids">

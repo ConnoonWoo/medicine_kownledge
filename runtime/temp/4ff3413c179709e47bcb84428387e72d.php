@@ -1,18 +1,18 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:71:"F:\phpstudy\WWW\aaaaa\public/../application/index\view\Login\Login.html";i:1554134566;s:62:"F:\phpstudy\WWW\aaaaa\application\index\view\Common\_head.html";i:1554134376;s:64:"F:\phpstudy\WWW\aaaaa\application\index\view\Common\_footer.html";i:1554133872;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:100:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Kown/kownledge.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554219607;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554219607;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
 <title>中药材知识系统</title>
-<link href="/aaaaa/public/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<script type='text/javascript' src="/aaaaa/public/static/js/jquery-1.11.1.min.js"></script>
-<link href="/aaaaa/public/static/css/style.css" rel='stylesheet' type='text/css' />
+<link href="/medicine_kownledge/public/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script type='text/javascript' src="/medicine_kownledge/public/static/js/jquery-1.11.1.min.js"></script>
+<link href="/medicine_kownledge/public/static/css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="/aaaaa/public/static/images/favicon.ico" type="image/x-icon">
-<link href="/aaaaa/public/static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="/aaaaa/public/static/js/megamenu.js"></script>
+<link rel="icon" href="/medicine_kownledge/public/static/images/favicon.ico" type="image/x-icon">
+<link href="/medicine_kownledge/public/static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/medicine_kownledge/public/static/js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-  <script src="/aaaaa/public/static/js/responsiveslides.min.js"></script>
+  <script src="/medicine_kownledge/public/static/js/responsiveslides.min.js"></script>
 <script>
     $(function () {
       $("#slider1").responsiveSlides({
@@ -28,14 +28,32 @@
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Fmw0Nn2iPgfKKVkdaNVBKqWWcO3P0uyK"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
 <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+<link href="/medicine_kownledge/public/static/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="/medicine_kownledge/public/static/css/etalage.css">
+<script src="/medicine_kownledge/public/static/js/jquery.etalage.min.js"></script>
+<script>
+			jQuery(document).ready(function($){
 
+				$('#etalage').etalage({
+					thumb_image_width: 300,
+					thumb_image_height: 400,
+					source_image_width: 900,
+					source_image_height: 1200,
+					show_hint: true,
+					click_callback: function(image_anchor, instance_id){
+						alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+					}
+				});
+
+			});
+		</script>
 </head>
 <body>
 
 <div class="header_top">
 	 <div class="container">
 		 <div class="logo">
-		 	<a href="index.html"><img src="/aaaaa/public/static/images/logo1.png" alt=""/></a></div>
+		 	<a href="index.html"><img src="/medicine_kownledge/public/static/images/logo1.png" alt=""/></a></div>
 		 <div class="header_right">中药材知识CHINESE MEDICINE</div>
 	 </div>
 </div>
@@ -54,21 +72,21 @@
 									<h4>道地药材</h4>
 									<ul>
 										<li><a href="<?php echo url('Medicine/index'); ?>">维药</a></li>
-										<li><a href="medicine.html">秦药</a></li>
-										<li><a href="medicine.html">藏药</a></li>
-										<li><a href="medicine.html">川药</a></li>
-										<li><a href="medicine.html">云药</a></li>
-										<li><a href="medicine.html">贵药</a></li>
-										<li><a href="medicine.html">广药</a></li>
-										<li><a href="medicine.html">海药</a></li>
-										<li><a href="medicine.html">云药</a></li>
-										<li><a href="medicine.html">南药</a></li>
-										<li><a href="medicine.html">浙药</a></li>
-										<li><a href="medicine.html">淮药</a></li>
-										<li><a href="medicine.html">怀药</a></li>
-										<li><a href="medicine.html">北药</a></li>
-										<li><a href="medicine.html">蒙药</a></li>
-										<li><a href="medicine.html">关药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">秦药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">藏药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">川药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">云药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">贵药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">广药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">海药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">云药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">南药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">浙药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">淮药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">怀药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">北药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">蒙药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">关药</a></li>
 									</ul>	
 								</div>							
 							</div>
@@ -76,15 +94,15 @@
 								<div class="h_nav">
 									<h4>中药材库</h4>
 									<ul>
-										<li><a href="medicine.html">解表药</a></li>
-										<li><a href="medicine.html">清热药</a></li>
-										<li><a href="medicine.html">泻下药</a></li>
-										<li><a href="medicine.html">祛风湿药</a></li>
-										<li><a href="medicine.html">化湿药</a></li>
-										<li><a href="medicine.html">利水渗湿药</a></li>
-										<li><a href="medicine.html">温里药</a></li>
-										<li><a href="medicine.html">理气药</a></li>
-										<li><a href="medicine.html">祛湿药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">解表药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">清热药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">泻下药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">祛风湿药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">化湿药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">利水渗湿药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">温里药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">理气药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">祛湿药</a></li>
 									</ul>	
 								</div>							
 							</div>
@@ -92,15 +110,15 @@
 								<div class="h_nav">
 									<h4>中药材库</h4>
 									<ul>
-										<li><a href="medicine.html">驱虫药</a></li>
-										<li><a href="medicine.html">止血药</a></li>
-										<li><a href="medicine.html">活血化瘀药</a></li>
-										<li><a href="medicine.html">化痰止咳平喘药</a></li>
-										<li><a href="medicine.html">安神药</a></li>
-										<li><a href="medicine.html">平肝息风药</a></li>
-										<li><a href="medicine.html">开窍药</a></li>
-										<li><a href="medicine.html">补虚药</a></li>
-										<li><a href="medicine.html">收涩药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">驱虫药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">止血药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">活血化瘀药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">化痰止咳平喘药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">安神药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">平肝息风药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">开窍药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">补虚药</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">收涩药</a></li>
 									</ul>
 								</div>
 							</div>
@@ -108,19 +126,19 @@
 								<div class="h_nav">
 									<h4>药用植物库</h4>
 									<ul>
-										<li><a href="medicine.html">木兰科</a></li>
-										<li><a href="medicine.html">八角科</a></li>
-										<li><a href="medicine.html">五味子科</a></li>
-										<li><a href="medicine.html">番荔枝科</a></li>
-										<li><a href="medicine.html">樟科</a></li>
-										<li><a href="medicine.html">莲叶桐科</a></li>
-										<li><a href="medicine.html">毛茛(gen)科</a></li>
-										<li><a href="medicine.html">金鱼藻科</a></li>
-										<li><a href="medicine.html">睡莲科</a></li>
-										<li><a href="medicine.html">小檗(bo)科</a></li>
-										<li><a href="medicine.html">木通科</a></li>
-										<li><a href="medicine.html">防己科</a></li>
-										<li><a href="medicine.html">马兜铃科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">木兰科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">八角科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">五味子科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">番荔枝科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">樟科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">莲叶桐科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">毛茛(gen)科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">金鱼藻科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">睡莲科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">小檗(bo)科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">木通科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">防己科</a></li>
+										<li><a href="<?php echo url('Medicine/index'); ?>">马兜铃科</a></li>
 									</ul>	
 								</div>												
 							</div>	
@@ -140,28 +158,28 @@
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="kownledge.html">中药养生</a></li>
+										<li><a href="<?php echo url('Kown/index'); ?>">中药养生</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="kownledge.html">中药炮制</a></li>
+										<li><a href="<?php echo url('Kown/index'); ?>">中药炮制</a></li>
 									</ul>	
 								</div>												
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="kownledge.html">中药种植</a></li>
+										<li><a href="<?php echo url('Kown/index'); ?>">中药种植</a></li>
 									</ul>	
 								</div>						
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="kownledge.html">中药美容</a></li>
+										<li><a href="<?php echo url('Kown/index'); ?>">中药美容</a></li>
 									</ul>	
 								</div>
 							</div>
@@ -216,34 +234,57 @@
 	</div>
 </div>
 <!---->
-<div class="login_sec">
+<div class="top-sellers">
 	 <div class="container">
-		 <ol class="breadcrumb">
-		  <li><a href="index.html">主页</a></li>
-		  <li class="active">登录</li>
-		 </ol>
-		 <h2>登录</h2>
-		 <div class="col-md-6 log">			 
-				 <p>欢迎,请填写账户信息登录</p>
-				 <p>如果您没有账户, <a href="account.html">请点击这里</a></p>
-				 <form>
-					 <h5>用户名：</h5>	
-					 <input type="text" value="">
-					 <h5>密码：</h5>
-					 <input type="password" value="">					
-					 <input type="submit" value="登录">
-				 </form>				 
+	 	<h3 style="margin-top:50px">中药鉴别</h3>
+	 	<h5>　　藏药起源于西藏，是中华民族——藏族的传统文化</h5>
+		 <div class="sofas">
+		 	<div style="margin-top:30px;">
+		 		<a href="<?php echo url('Kown/index_more'); ?>">
+				 <div class="col-md-5 ">
+					 <img src="/medicine_kownledge/public/static/images/banner1.jpg" alt=""/>
+				 </div>
+				 <div class="col-md-7">
+					 <p>好好学习，天天向上</p>
+					 <p style="margin-top:20px;">发布人：Connoon</p>
+					 <p>发布时间：2019-03-29</p>
+				 </div>
+				 <div class="clearfix"></div>
+				 </a>
+			 </div>
+			
+			<div style="margin-top:30px;">
+				<a href="<?php echo url('Kown/index_more'); ?>">
+				 <div class="col-md-5 ">
+					 <img src="/medicine_kownledge/public/static/images/banner1.jpg" alt=""/>
+				 </div>
+				 <div class="col-md-7">
+					 <p>好好学习，天天向上</p>
+					 <p style="margin-top:20px;">发布人：Connoon</p>
+					 <p>发布时间：2019-03-29</p>
+				 </div>
+				 <div class="clearfix"></div>
+				 </a>
+			</div>
+
+			<div style="margin-top:30px;">
+				 <a href="<?php echo url('Kown/index_more'); ?>">
+				 <div class="col-md-5 ">
+					 <img src="/medicine_kownledge/public/static/images/banner1.jpg" alt=""/>
+				 </div>
+				 <div class="col-md-7">
+					 <p>好好学习，天天向上</p>
+					 <p style="margin-top:20px;">发布人：Connoon</p>
+					 <p>发布时间：2019-03-29</p>
+				 </div>
+				 <div class="clearfix"></div>
+				 </a>
+			 </div>
+
 		 </div>
-		  <div class="col-md-6 login-right">
-			  	<h3>注册新账户</h3>
-				<p>一个账户，便是与世界的距离。</p>
-				<p>登录网站，发布新的药材，发布新的生产经验。与开发者进行深入的交流。在等什么，加入我们。</p>
-				<a class="acount-btn" href="account.html">创建新账户</a>
-		 </div>
-		 <div class="clearfix"></div>
 	 </div>
 </div>
-<!---->
+
 <div class="footer-content">
 	 <div class="container">
 		 <div class="ftr-grids">

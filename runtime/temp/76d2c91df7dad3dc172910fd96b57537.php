@@ -1,18 +1,18 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:74:"F:\phpstudy\WWW\aaaaa\public/../application/index\view\Kown\kownledge.html";i:1554135052;s:62:"F:\phpstudy\WWW\aaaaa\application\index\view\Common\_head.html";i:1554135597;s:64:"F:\phpstudy\WWW\aaaaa\application\index\view\Common\_footer.html";i:1554133872;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:99:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Login/account.html";i:1554305462;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554219607;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554303203;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
 <title>中药材知识系统</title>
-<link href="/aaaaa/public/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<script type='text/javascript' src="/aaaaa/public/static/js/jquery-1.11.1.min.js"></script>
-<link href="/aaaaa/public/static/css/style.css" rel='stylesheet' type='text/css' />
+<link href="/medicine_kownledge/public/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script type='text/javascript' src="/medicine_kownledge/public/static/js/jquery-1.11.1.min.js"></script>
+<link href="/medicine_kownledge/public/static/css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="/aaaaa/public/static/images/favicon.ico" type="image/x-icon">
-<link href="/aaaaa/public/static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="/aaaaa/public/static/js/megamenu.js"></script>
+<link rel="icon" href="/medicine_kownledge/public/static/images/favicon.ico" type="image/x-icon">
+<link href="/medicine_kownledge/public/static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/medicine_kownledge/public/static/js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-  <script src="/aaaaa/public/static/js/responsiveslides.min.js"></script>
+  <script src="/medicine_kownledge/public/static/js/responsiveslides.min.js"></script>
 <script>
     $(function () {
       $("#slider1").responsiveSlides({
@@ -28,9 +28,9 @@
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Fmw0Nn2iPgfKKVkdaNVBKqWWcO3P0uyK"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
 <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
-<link href="/aaaaa/public/static/css/form.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="/aaaaa/public/static/css/etalage.css">
-<script src="/aaaaa/public/static/js/jquery.etalage.min.js"></script>
+<link href="/medicine_kownledge/public/static/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="/medicine_kownledge/public/static/css/etalage.css">
+<script src="/medicine_kownledge/public/static/js/jquery.etalage.min.js"></script>
 <script>
 			jQuery(document).ready(function($){
 
@@ -53,7 +53,7 @@
 <div class="header_top">
 	 <div class="container">
 		 <div class="logo">
-		 	<a href="index.html"><img src="/aaaaa/public/static/images/logo1.png" alt=""/></a></div>
+		 	<a href="index.html"><img src="/medicine_kownledge/public/static/images/logo1.png" alt=""/></a></div>
 		 <div class="header_right">中药材知识CHINESE MEDICINE</div>
 	 </div>
 </div>
@@ -234,57 +234,88 @@
 	</div>
 </div>
 <!---->
-<div class="top-sellers">
-	 <div class="container">
-	 	<h3 style="margin-top:50px">中药鉴别</h3>
-	 	<h5>　　藏药起源于西藏，是中华民族——藏族的传统文化</h5>
-		 <div class="sofas">
-		 	<div style="margin-top:30px;">
-		 		<a href="<?php echo url('Kown/index_more'); ?>">
-				 <div class="col-md-5 ">
-					 <img src="/aaaaa/public/static/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
+<div class="container">
+	  <ol class="breadcrumb">
+		  <li><a href="<?php echo url('Index/index'); ?>">主页</a></li>
+		  <li class="active">注册</li>
+		 </ol>
+	 <div class="registration">
+		 <div class="registration_left">
+			 <h2>开始 <span> 注册新账户 </span></h2> 
+			 <div class="registration_form">
+			 <!-- Form -->
+				<form id="registration_form" action="<?php echo url('Login/add_account'); ?>" method="post">
+					<div>
+						<label>
+							<input placeholder="name:" name="user_new_name" type="text" tabindex="1" required autofocus>
+						</label>
+					</div>
+					<div>
+						<label>
+							<select name="sex">
+								<option value="1">男</option>
+								<option value="2">女</option>
+							</select>
+						</label>
+					</div>
+					<div>
+						<label>
+							<input placeholder="email address:" name="user_name" type="email" tabindex="3" required>
+						</label>
+					</div>
+					<div>
+						<label>
+							<input placeholder="password" name="password" id="password" type="password" tabindex="4" required>
+						</label>
+					</div>						
+					<div>
+						<label>
+							<input placeholder="retype password" id="re_psd" name="re_password" type="password" onblur="check_psd()" tabindex="4" required>
+						</label>
+					</div>	
+					<div>
+						<input type="submit" value="注册新账户" id="register-submit">
+					</div>
+				</form>
+				<!-- /Form -->
 			 </div>
-			
-			<div style="margin-top:30px;">
-				<a href="<?php echo url('Kown/index_more'); ?>">
-				 <div class="col-md-5 ">
-					 <img src="/aaaaa/public/static/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
-			</div>
-
-			<div style="margin-top:30px;">
-				 <a href="<?php echo url('Kown/index_more'); ?>">
-				 <div class="col-md-5 ">
-					 <img src="/aaaaa/public/static/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
-			 </div>
-
 		 </div>
+		 <div class="registration_left">
+			 <h2>已有账户</h2>
+			 <div class="registration_form">
+			 <!-- Form -->
+				<form id="registration_form" action="<?php echo url('Login/login_in'); ?>" method="post">
+					<div>
+						<label>
+							<input placeholder="email:" type="email" name="user_name" tabindex="3" required>
+						</label>
+					</div>
+					<div>
+						<label>
+							<input placeholder="password" type="password" name="password" tabindex="4" required>
+						</label>
+					</div>						
+					<div>
+						<input type="submit" value="登录" id="register-submit">
+					</div>
+				</form>
+			 <!-- /Form -->
+			 </div>
+		 </div>
+		 <div class="clearfix"></div>
 	 </div>
 </div>
 
+<script  type="text/javascript">
+	function check_psd() {
+		var psd = document.getElementById('password').value;
+		var re_psd = document.getElementById('re_psd').value;
+		if (psd != re_psd) {
+			alert('两次密码输入不一致，请核对');
+		}
+	}
+</script>
+<!-- end registration -->
 <div class="footer-content">
 	 <div class="container">
 		 <div class="ftr-grids">

@@ -1,18 +1,18 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:97:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554219607;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554219607;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:97:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554307317;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554303203;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
 <title>中药材知识系统</title>
-<link href="/aaaaa/public/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<script type='text/javascript' src="/aaaaa/public/static/js/jquery-1.11.1.min.js"></script>
-<link href="/aaaaa/public/static/css/style.css" rel='stylesheet' type='text/css' />
+<link href="/medicine_kownledge/public/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script type='text/javascript' src="/medicine_kownledge/public/static/js/jquery-1.11.1.min.js"></script>
+<link href="/medicine_kownledge/public/static/css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="/aaaaa/public/static/images/favicon.ico" type="image/x-icon">
-<link href="/aaaaa/public/static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="/aaaaa/public/static/js/megamenu.js"></script>
+<link rel="icon" href="/medicine_kownledge/public/static/images/favicon.ico" type="image/x-icon">
+<link href="/medicine_kownledge/public/static/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/medicine_kownledge/public/static/js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-  <script src="/aaaaa/public/static/js/responsiveslides.min.js"></script>
+  <script src="/medicine_kownledge/public/static/js/responsiveslides.min.js"></script>
 <script>
     $(function () {
       $("#slider1").responsiveSlides({
@@ -28,9 +28,9 @@
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Fmw0Nn2iPgfKKVkdaNVBKqWWcO3P0uyK"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
 <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
-<link href="/aaaaa/public/static/css/form.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="/aaaaa/public/static/css/etalage.css">
-<script src="/aaaaa/public/static/js/jquery.etalage.min.js"></script>
+<link href="/medicine_kownledge/public/static/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="/medicine_kownledge/public/static/css/etalage.css">
+<script src="/medicine_kownledge/public/static/js/jquery.etalage.min.js"></script>
 <script>
 			jQuery(document).ready(function($){
 
@@ -53,7 +53,7 @@
 <div class="header_top">
 	 <div class="container">
 		 <div class="logo">
-		 	<a href="index.html"><img src="/aaaaa/public/static/images/logo1.png" alt=""/></a></div>
+		 	<a href="index.html"><img src="/medicine_kownledge/public/static/images/logo1.png" alt=""/></a></div>
 		 <div class="header_right">中药材知识CHINESE MEDICINE</div>
 	 </div>
 </div>
@@ -187,8 +187,8 @@
 						</div>
 	    			</div>
 				</li>
-				<li><a class="color6" href="<?php echo url('Login/index'); ?>">登录/注册</a></li>
-				<li><a class="color7" href="#">登录后功能</a>
+				<?php if(\think\Session::get('name') != ""): ?>
+				<li><a class="color7" href="#">发布</a>
 					<div class="megapanel">
 						<div class="row">
 							<div class="col1">
@@ -221,7 +221,12 @@
 							</div>
 						</div>
 	    			</div>
-				</li>				
+				</li>
+				<li><a class="color6" href="<?php echo url('Login/login_out'); ?>"><?php echo \think\Session::get('name'); ?></a></li>
+				<?php else: ?>
+				<li><a class="color6" href="<?php echo url('Login/index'); ?>">登录/注册</a></li>
+				<?php endif; ?>
+
 			</ul> 
 		    <div class="search">
 			 <form>
@@ -237,9 +242,9 @@
 	 <div class="container">
 		 <div class="slider">
 				<ul class="rslides" id="slider1">
-				  <li><img src="/aaaaa/public/static/images/banner2.jpg" alt=""></li>
-				  <li><img src="/aaaaa/public/static/images/banner1.jpg" alt=""></li>
-				  <li><img src="/aaaaa/public/static/images/banner3.jpg" alt=""></li>
+				  <li><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""></li>
+				  <li><img src="/medicine_kownledge/public/static/images/banner1.jpg" alt=""></li>
+				  <li><img src="/medicine_kownledge/public/static/images/banner3.jpg" alt=""></li>
 				</ul>
 		 </div>
 	 </div>

@@ -186,8 +186,8 @@
 						</div>
 	    			</div>
 				</li>
-				<li><a class="color6" href="{:url('Login/index')}">登录/注册</a></li>
-				<li><a class="color7" href="#">登录后功能</a>
+				{if condition='$Think.session.name neq ""'}
+				<li><a class="color7" href="#">发布</a>
 					<div class="megapanel">
 						<div class="row">
 							<div class="col1">
@@ -220,7 +220,12 @@
 							</div>
 						</div>
 	    			</div>
-				</li>				
+				</li>
+				<li><a class="color6" href="{:url('Login/login_out')}">{$Think.session.name}</a></li>
+				{else/}
+				<li><a class="color6" href="{:url('Login/index')}">登录/注册</a></li>
+				{/if}
+
 			</ul> 
 		    <div class="search">
 			 <form>

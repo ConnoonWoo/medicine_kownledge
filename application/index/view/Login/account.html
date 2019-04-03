@@ -10,35 +10,33 @@
 			 <h2>开始 <span> 注册新账户 </span></h2> 
 			 <div class="registration_form">
 			 <!-- Form -->
-				<form id="registration_form" action="contact.php" method="post">
+				<form id="registration_form" action="{:url('Login/add_account')}" method="post">
 					<div>
 						<label>
-							<input placeholder="first name:" type="text" tabindex="1" required autofocus>
+							<input placeholder="name:" name="user_new_name" type="text" tabindex="1" required autofocus>
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="last name:" type="text" tabindex="2" required autofocus>
+							<select name="sex">
+								<option value="1">男</option>
+								<option value="2">女</option>
+							</select>
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="email address:" type="email" tabindex="3" required>
+							<input placeholder="email address:" name="user_name" type="email" tabindex="3" required>
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="Mobile:" type="text" tabindex="3" required>
-						</label>
-					</div>								
-					<div>
-						<label>
-							<input placeholder="password" type="password" tabindex="4" required>
+							<input placeholder="password" name="password" id="password" type="password" tabindex="4" required>
 						</label>
 					</div>						
 					<div>
 						<label>
-							<input placeholder="retype password" type="password" tabindex="4" required>
+							<input placeholder="retype password" id="re_psd" name="re_password" type="password" onblur="check_psd()" tabindex="4" required>
 						</label>
 					</div>	
 					<div>
@@ -52,15 +50,15 @@
 			 <h2>已有账户</h2>
 			 <div class="registration_form">
 			 <!-- Form -->
-				<form id="registration_form" action="contact.php" method="post">
+				<form id="registration_form" action="{:url('Login/login_in')}" method="post">
 					<div>
 						<label>
-							<input placeholder="email:" type="email" tabindex="3" required>
+							<input placeholder="email:" type="email" name="user_name" tabindex="3" required>
 						</label>
 					</div>
 					<div>
 						<label>
-							<input placeholder="password" type="password" tabindex="4" required>
+							<input placeholder="password" type="password" name="password" tabindex="4" required>
 						</label>
 					</div>						
 					<div>
@@ -73,5 +71,15 @@
 		 <div class="clearfix"></div>
 	 </div>
 </div>
+
+<script  type="text/javascript">
+	function check_psd() {
+		var psd = document.getElementById('password').value;
+		var re_psd = document.getElementById('re_psd').value;
+		if (psd != re_psd) {
+			alert('两次密码输入不一致，请核对');
+		}
+	}
+</script>
 <!-- end registration -->
 {include file='Common/_footer'}
