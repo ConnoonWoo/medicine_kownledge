@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:105:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Kown/kownledge_more.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554219607;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554219607;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:105:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Kown/kownledge_more.html";i:1554637374;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554631409;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554638676;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -151,35 +151,35 @@
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药鉴别</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>2)); ?>">中药鉴别</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药养生</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>3)); ?>">中药美容</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药炮制</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>4)); ?>">中药炮制</a></li>
 									</ul>	
 								</div>												
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药种植</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>5)); ?>">中药养生</a></li>
 									</ul>	
 								</div>						
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药美容</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>6)); ?>">中药种植</a></li>
 									</ul>	
 								</div>
 							</div>
@@ -187,8 +187,8 @@
 						</div>
 	    			</div>
 				</li>
-				<li><a class="color6" href="<?php echo url('Login/index'); ?>">登录/注册</a></li>
-				<li><a class="color7" href="#">登录后功能</a>
+				<?php if(\think\Session::get('name') != ""): ?>
+				<li><a class="color7" href="#">发布</a>
 					<div class="megapanel">
 						<div class="row">
 							<div class="col1">
@@ -221,7 +221,12 @@
 							</div>
 						</div>
 	    			</div>
-				</li>				
+				</li>
+				<li><a class="color6" href="<?php echo url('Login/login_out'); ?>"><?php echo \think\Session::get('name'); ?></a></li>
+				<?php else: ?>
+				<li><a class="color6" href="<?php echo url('Login/index'); ?>">登录/注册</a></li>
+				<?php endif; ?>
+
 			</ul> 
 		    <div class="search">
 			 <form>
@@ -236,19 +241,158 @@
 <!---->
 <div class="top-sellers">
 	 <div class="container">
-	 	<h3 style="margin-top:50px">好好学习，天天向上</h3>
-	 	<h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：Connoon</p><p>发表时间：2019-03-31</p></h5>
-	 	<img src="/medicine_kownledge/public/static/images/banner1.jpg" width="50%" style="margin-left:25%;" alt="">
+		 <?php if($type_id == 2): ?>
+	 	 <h3 style="margin-top:50px"><?php echo $data['jd_name']; ?>的鉴定方法</h3>
+	 	 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：<?php echo $data['author_name']; ?></p><p style="margin-top: 1em;">发表时间：<?php echo $data['gmt_modified']; ?></p></h5>
 		 <div>
 		 	<h5>
-		 		<div>
-		 			<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【人参药用价值】</p>　　藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好,藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好
-					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【保健养生作用】</p>
-					　　藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好	
+				<div class="col-md-1"></div>
+		 		<div class="col-md-10" style="margin-bottom: 1em;">
+		 			<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【鉴定中药材名】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_name']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材来源鉴定】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_laiyuan']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材历史考证】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_history']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材形态鉴定】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_xingtai']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材性状鉴定】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_xingzhuang']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材显微鉴定】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_xianwei']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材理化鉴定】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_lihua']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【生境分布】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_shengchang']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【采集加工】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_caiji']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【饮片炮制】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_paozhi']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【性能功用】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_xingneng']; ?></p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【附注】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['jd_fuzhu']; ?></p>
 		 		</div>
 		 	</h5>
-		 	
 		 </div>
+
+		 <?php elseif($type_id == 3): ?>
+		 <h3 style="margin-top:50px"><?php echo $data['mr_name']; ?>的美容功效及方法</h3>
+		 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：<?php echo $data['author_name']; ?></p><p style="margin-top: 1em;">发表时间：<?php echo $data['gmt_modified']; ?></p></h5>
+		 <div>
+			 <h5>
+				 <div class="col-md-1"></div>
+				 <div class="col-md-10" style="margin-bottom: 1em;">
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材简介】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['mr_jianjie']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【美容功效】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['mr_gongxiao']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【美容方法】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['mr_fangfa']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【用法用量】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['mr_yongliang']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【使用注意】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['mr_zhuyi']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【按语】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['mr_anyu']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【配方】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['mr_peifang']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【本草文献】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['mr_wenxian']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【现代研究】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['mr_yanjiu']; ?></p>
+				 </div>
+			 </h5>
+		 </div>
+
+		 <?php elseif($type_id == 4): ?>
+		 <h3 style="margin-top:50px"><?php echo $data['pz_name']; ?>的炮制方法与标准</h3>
+		 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：<?php echo $data['author_name']; ?></p><p style="margin-top: 1em;">发表时间：<?php echo $data['gmt_modified']; ?></p></h5>
+		 <div>
+			 <h5>
+				 <div class="col-md-1"></div>
+				 <div class="col-md-10" style="margin-bottom: 1em;">
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材来源】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['pz_laiyuan']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【古代炮制方法】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['pz_fangfa']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【现代炮制方法】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['pz_new_fangfa']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【饮片性状】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['pz_xingzhuang']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【质量标准】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['pz_biaozhun']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【炮制目的】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['pz_mudi']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【应用选择】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['pz_choose']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【现代研究】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['pz_yanjiu']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【附】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['pz_fu']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【总结】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['pz_zongjie']; ?></p>
+				 </div>
+			 </h5>
+		 </div>
+
+		 <?php elseif($type_id == 5): ?>
+		 <h3 style="margin-top:50px"><?php echo $data['ys_name']; ?>的养生保健作用与方法</h3>
+		 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：<?php echo $data['author_name']; ?></p><p style="margin-top: 1em;">发表时间：<?php echo $data['gmt_modified']; ?></p></h5>
+		 <div>
+			 <h5>
+				 <div class="col-md-1"></div>
+				 <div class="col-md-10" style="margin-bottom: 1em;">
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【<?php echo $data['ys_name']; ?>药用价值】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['ys_xingtai']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【保健养生作用】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['ys_baojian']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【养生方法推荐】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['ys_peifang']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【保健注意】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['ys_zhuyi']; ?></p>
+				 </div>
+			 </h5>
+		 </div>
+
+		 <?php elseif($type_id == 6): ?>
+		 <h3 style="margin-top:50px"><?php echo $data['zz_name']; ?>的种植技术与栽培管理</h3>
+		 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：<?php echo $data['author_name']; ?></p><p style="margin-top: 1em;">发表时间：<?php echo $data['gmt_modified']; ?></p></h5>
+		 <div>
+			 <h5>
+				 <div class="col-md-1"></div>
+				 <div class="col-md-10" style="margin-bottom: 1em;">
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【概述】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['zz_gaishu']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【形态特征】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['zz_xingtai']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【生长环境】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['zz_huanjing']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【种植技术】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['zz_jishu']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【栽培管理】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['zz_guanli']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【采收与加工】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['zz_caishou']; ?></p>
+				 </div>
+			 </h5>
+		 </div>
+
+		 <?php elseif($type_id == 1): ?>
+		 <h3 style="margin-top:50px"><?php echo $data['cs_name']; ?>的传说故事</h3>
+		 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：<?php echo $data['author_name']; ?></p><p style="margin-top: 1em;">发表时间：<?php echo $data['gmt_modified']; ?></p></h5>
+		 <div>
+			 <h5>
+				 <div class="col-md-1"></div>
+				 <div class="col-md-10" style="margin-bottom: 1em;">
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['cs_shiju']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【形态采制】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['cs_quwen']; ?></p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【传说故事】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　<?php echo $data['cs_gushi']; ?></p>
+				 </div>
+			 </h5>
+		 <?php endif; ?>
 		 <div style="height:2em"></div>
 	 </div>
 </div>
@@ -267,18 +411,22 @@
 			 <div class="col-md-3 ftr-grid">
 				 <h4>中药材知识库</h4>
 				 <ul>
-					 <li><a href="#">中药鉴别</a></li>
-					 <li><a href="#">中药养生</a></li>
-					 <li><a href="#">中药炮制</a></li>
-					 <li><a href="#">中药种植</a></li>
-					 <li><a href="#">中药美容</a></li>
-					 <li><a href="#">中药传说</a></li>					 
+					 <li><a href="<?php echo url('Kown/index',array('id'=>2)); ?>">中药鉴别</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>3)); ?>">中药养生</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>4)); ?>">中药炮制</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>5)); ?>">中药种植</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>6)); ?>">中药美容</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>1)); ?>">中药传说</a></li>
 				 </ul>
 			 </div>
 			 <div class="col-md-6 ftr-grid">
 				 <h4>中药传说</h4>
 				 <ul>
-				 	<li><a href=""><p>山一程，水一程，身向榆关那畔行，夜深千帐灯。</p>风一更，雪一更，聒碎乡心梦不成，故园无此声</a></li>
+				 	<li><a href="<?php echo url('Kown/index_more',array('type_id'=>1,'id'=>2)); ?>">
+						<p>中药材:大枣</p>荆棘赤心百益红，山东茌县史作贡。<br>
+						维生素丸是美誉，大枣汤将燥脏冲。<br>
+						略亚菖蒲通九窍，可和百药甘草同。<br>
+						保健药膳是良方，粥饼久食乐融融。</a></li>
 				 </ul>
 			 </div>
 			 <div class="clearfix"></div>

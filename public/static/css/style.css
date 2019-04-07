@@ -220,7 +220,7 @@ a i.google:hover {
 .h_nav ul li a{
 	display: block;
 	font-size: 0.95em;
-	color: #555;
+	color: #359;
 	text-transform: capitalize;
 	line-height: 1.8em;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -1132,6 +1132,12 @@ p.prod-desc {
   padding: 3px 0;
   font-size: 0.8em;
   color: #555;
+}
+
+.h_nav li .times {
+	width: 20%;
+	float: right;
+	color: #999;
 }
 .single-bottom a {
   padding: 3px 0;

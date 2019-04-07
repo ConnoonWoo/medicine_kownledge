@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:103:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Medicine/medicine.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554219607;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554219607;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:103:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Medicine/medicine.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554631409;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554303203;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -151,35 +151,35 @@
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药鉴别</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>2)); ?>">中药鉴别</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药养生</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>3)); ?>">中药美容</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药炮制</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>4)); ?>">中药炮制</a></li>
 									</ul>	
 								</div>												
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药种植</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>5)); ?>">中药养生</a></li>
 									</ul>	
 								</div>						
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药美容</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>6)); ?>">中药种植</a></li>
 									</ul>	
 								</div>
 							</div>
@@ -187,8 +187,8 @@
 						</div>
 	    			</div>
 				</li>
-				<li><a class="color6" href="<?php echo url('Login/index'); ?>">登录/注册</a></li>
-				<li><a class="color7" href="#">登录后功能</a>
+				<?php if(\think\Session::get('name') != ""): ?>
+				<li><a class="color7" href="#">发布</a>
 					<div class="megapanel">
 						<div class="row">
 							<div class="col1">
@@ -221,7 +221,12 @@
 							</div>
 						</div>
 	    			</div>
-				</li>				
+				</li>
+				<li><a class="color6" href="<?php echo url('Login/login_out'); ?>"><?php echo \think\Session::get('name'); ?></a></li>
+				<?php else: ?>
+				<li><a class="color6" href="<?php echo url('Login/index'); ?>">登录/注册</a></li>
+				<?php endif; ?>
+
 			</ul> 
 		    <div class="search">
 			 <form>

@@ -2,19 +2,158 @@
 <!---->
 <div class="top-sellers">
 	 <div class="container">
-	 	<h3 style="margin-top:50px">好好学习，天天向上</h3>
-	 	<h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：Connoon</p><p>发表时间：2019-03-31</p></h5>
-	 	<img src="__STATIC__/images/banner1.jpg" width="50%" style="margin-left:25%;" alt="">
+		 {if condition="$type_id eq 2"}
+	 	 <h3 style="margin-top:50px">{$data.jd_name}的鉴定方法</h3>
+	 	 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：{$data.author_name}</p><p style="margin-top: 1em;">发表时间：{$data.gmt_modified}</p></h5>
 		 <div>
 		 	<h5>
-		 		<div>
-		 			<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【人参药用价值】</p>　　藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好,藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好
-					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【保健养生作用】</p>
-					　　藏药起源于西藏，是中华民族——藏族的传统文化  dahdlkhlhd哈哈哈你好	
+				<div class="col-md-1"></div>
+		 		<div class="col-md-10" style="margin-bottom: 1em;">
+		 			<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【鉴定中药材名】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_name}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材来源鉴定】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_laiyuan}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材历史考证】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_history}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材形态鉴定】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_xingtai}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材性状鉴定】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_xingzhuang}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材显微鉴定】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_xianwei}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材理化鉴定】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_lihua}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【生境分布】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_shengchang}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【采集加工】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_caiji}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【饮片炮制】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_paozhi}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【性能功用】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_xingneng}</p>
+					<p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【附注】</p>
+					<p  style="color: #999;line-height: 1.5em;">　　{$data.jd_fuzhu}</p>
 		 		</div>
 		 	</h5>
-		 	
 		 </div>
+
+		 {elseif condition="$type_id eq 3"}
+		 <h3 style="margin-top:50px">{$data.mr_name}的美容功效及方法</h3>
+		 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：{$data.author_name}</p><p style="margin-top: 1em;">发表时间：{$data.gmt_modified}</p></h5>
+		 <div>
+			 <h5>
+				 <div class="col-md-1"></div>
+				 <div class="col-md-10" style="margin-bottom: 1em;">
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材简介】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.mr_jianjie}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【美容功效】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.mr_gongxiao}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【美容方法】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.mr_fangfa}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【用法用量】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.mr_yongliang}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【使用注意】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.mr_zhuyi}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【按语】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.mr_anyu}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【配方】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.mr_peifang}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【本草文献】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.mr_wenxian}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【现代研究】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.mr_yanjiu}</p>
+				 </div>
+			 </h5>
+		 </div>
+
+		 {elseif condition="$type_id eq 4"}
+		 <h3 style="margin-top:50px">{$data.pz_name}的炮制方法与标准</h3>
+		 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：{$data.author_name}</p><p style="margin-top: 1em;">发表时间：{$data.gmt_modified}</p></h5>
+		 <div>
+			 <h5>
+				 <div class="col-md-1"></div>
+				 <div class="col-md-10" style="margin-bottom: 1em;">
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【药材来源】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.pz_laiyuan}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【古代炮制方法】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.pz_fangfa}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【现代炮制方法】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.pz_new_fangfa}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【饮片性状】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.pz_xingzhuang}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【质量标准】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.pz_biaozhun}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【炮制目的】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.pz_mudi}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【应用选择】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.pz_choose}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【现代研究】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.pz_yanjiu}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【附】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.pz_fu}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【总结】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.pz_zongjie}</p>
+				 </div>
+			 </h5>
+		 </div>
+
+		 {elseif condition="$type_id eq 5"}
+		 <h3 style="margin-top:50px">{$data.ys_name}的养生保健作用与方法</h3>
+		 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：{$data.author_name}</p><p style="margin-top: 1em;">发表时间：{$data.gmt_modified}</p></h5>
+		 <div>
+			 <h5>
+				 <div class="col-md-1"></div>
+				 <div class="col-md-10" style="margin-bottom: 1em;">
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【{$data.ys_name}药用价值】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.ys_xingtai}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【保健养生作用】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.ys_baojian}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【养生方法推荐】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.ys_peifang}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【保健注意】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.ys_zhuyi}</p>
+				 </div>
+			 </h5>
+		 </div>
+
+		 {elseif condition="$type_id eq 6"}
+		 <h3 style="margin-top:50px">{$data.zz_name}的种植技术与栽培管理</h3>
+		 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：{$data.author_name}</p><p style="margin-top: 1em;">发表时间：{$data.gmt_modified}</p></h5>
+		 <div>
+			 <h5>
+				 <div class="col-md-1"></div>
+				 <div class="col-md-10" style="margin-bottom: 1em;">
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【概述】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.zz_gaishu}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【形态特征】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.zz_xingtai}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【生长环境】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.zz_huanjing}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【种植技术】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.zz_jishu}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【栽培管理】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.zz_guanli}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【采收与加工】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.zz_caishou}</p>
+				 </div>
+			 </h5>
+		 </div>
+
+		 {elseif condition="$type_id eq 1"}
+		 <h3 style="margin-top:50px">{$data.cs_name}的传说故事</h3>
+		 <h5 style="text-align:center;margin-top:-1.8em;margin-bottom:1em"><p>发表人：{$data.author_name}</p><p style="margin-top: 1em;">发表时间：{$data.gmt_modified}</p></h5>
+		 <div>
+			 <h5>
+				 <div class="col-md-1"></div>
+				 <div class="col-md-10" style="margin-bottom: 1em;">
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.cs_shiju}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【形态采制】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.cs_quwen}</p>
+					 <p style="margin-bottom:1em;margin-top:1em;font-weight:bold">【传说故事】</p>
+					 <p  style="color: #999;line-height: 1.5em;">　　{$data.cs_gushi}</p>
+				 </div>
+			 </h5>
+		 {/if}
 		 <div style="height:2em"></div>
 	 </div>
 </div>

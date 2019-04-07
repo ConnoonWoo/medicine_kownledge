@@ -2,51 +2,50 @@
 <!---->
 <div class="top-sellers">
 	 <div class="container">
-	 	<h3 style="margin-top:50px">中药鉴别</h3>
-	 	<h5>　　藏药起源于西藏，是中华民族——藏族的传统文化</h5>
+		 <div style="background: #f6f9f9;border: #e1eded 1px solid;padding-bottom:20px;margin-bottom: 2em;">
+	 		<h3 style="margin-top:50px">{$type.jy_name}</h3>
+	 		<h5 style="line-height: 1.5em;">　　{$type.jy_content}</h5>
+		 </div>
 		 <div class="sofas">
-		 	<div style="margin-top:30px;">
-		 		<a href="{:url('Kown/index_more')}">
-				 <div class="col-md-5 ">
-					 <img src="__STATIC__/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
-			 </div>
-			
-			<div style="margin-top:30px;">
-				<a href="{:url('Kown/index_more')}">
-				 <div class="col-md-5 ">
-					 <img src="__STATIC__/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
-			</div>
 
-			<div style="margin-top:30px;">
-				 <a href="{:url('Kown/index_more')}">
-				 <div class="col-md-5 ">
-					 <img src="__STATIC__/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
+			 <div class="h_nav" style="margin-left:50px;">
+				 <ul>
+					 {foreach name="lists" item="list"}
+					 <li>
+						 {if condition="$id eq 2"}
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.jd_id))}" style="color:#069;">
+							 {$list.jd_name}的鉴定方法
+						 </a>
+						 {elseif condition="$id eq 3" /}
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.mr_id))}" style="color:#069;">
+							 {$list.mr_name}的美容功效及方法
+						 </a>
+						 {elseif condition="$id eq 4" /}
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.pz_id))}" style="color:#069;">
+							 {$list.pz_name}的炮制方法与标准
+						 </a>
+						 {elseif condition="$id eq 5" /}
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.ys_id))}" style="color:#069;">
+							 {$list.ys_name}的养生保健作用与方法
+						 </a>
+						 {elseif condition="$id eq 6" /}
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.zz_id))}" style="color:#069;">
+							 {$list.zz_name}种植技术与栽培管理
+						 </a>
+						 {elseif condition="$id eq 1" /}
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.cs_id))}" style="color:#069;">
+							 {$list.cs_name}的传说故事
+						 </a>
+						 {/if}
+					 </li>
+					 {if condition="$key % 6 eq 0"}
+					 	<div style="margin-top: 1em;"></div>
+					 {/if}
+					 {/foreach}
+				 </ul>
 			 </div>
 
+			<div>{$lists->render()}</div>
 		 </div>
 	 </div>
 </div>

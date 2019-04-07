@@ -16,30 +16,22 @@
 		 <div class="sofas">
 			 <div class="col-md-7 sofas">
 			 	<div style="height:300px">
-				 	<a href="#">最新</a>
+				 	<a href="#">最新版</a>
 					<div class="h_nav" style="margin-left:20px">
 						<ul>
-							<li><a href="products.html">Single BedSingle BedSingle BedSingle Bed</a></li>
-							<li><a href="products.html">Poster Bed</a></li>
-							<li><a href="products.html">Sofa Cum Bed</a></li>
-							<li><a href="products.html">Bunk Bed</a></li>
-							<li><a href="products.html">King Size Bed</a></li>
-							<li><a href="products.html">Metal Bed</a></li>
-							<li><a href="products.html">Metal Bed</a></li>
+							{foreach name="new" item="list"}
+							<li><a href="{:url('Kown/index_more',array('type_id'=>$list.type,'id'=>$list.id))}">{$list.name}</a></li>
+							{/foreach}
 						</ul>	
 					</div>			
 			 	</div>
 			 	<div style="height:300px">
-				 	<a href="products.html">最热</a>
+				 	<a href="#">最热版</a>
 				 	<div class="h_nav" style="margin-left:20px">
 						<ul>
-							<li><a href="products.html">Single BedSingle BedSingle BedSingle Bed</a></li>
-							<li><a href="products.html">Poster Bed</a></li>
-							<li><a href="products.html">Sofa Cum Bed</a></li>
-							<li><a href="products.html">Bunk Bed</a></li>
-							<li><a href="products.html">King Size Bed</a></li>
-							<li><a href="products.html">Metal Bed</a></li>
-							<li><a href="products.html">Metal Bed</a></li>
+							{foreach name="new" item="list"}
+							<li><a href="{:url('Kown/index_more',array('type_id'=>$list.type,'id'=>$list.id))}">{$list.name}</a></li>
+							{/foreach}
 						</ul>	
 					</div>	
 			 	</div>

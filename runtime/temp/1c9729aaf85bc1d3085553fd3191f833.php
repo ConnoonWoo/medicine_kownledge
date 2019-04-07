@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:97:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554307317;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554303203;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:97:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Index/index.html";i:1554639821;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554631409;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554638676;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -151,35 +151,35 @@
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药鉴别</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>2)); ?>">中药鉴别</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药养生</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>3)); ?>">中药美容</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药炮制</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>4)); ?>">中药炮制</a></li>
 									</ul>	
 								</div>												
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药种植</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>5)); ?>">中药养生</a></li>
 									</ul>	
 								</div>						
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药美容</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>6)); ?>">中药种植</a></li>
 									</ul>	
 								</div>
 							</div>
@@ -255,30 +255,22 @@
 		 <div class="sofas">
 			 <div class="col-md-7 sofas">
 			 	<div style="height:300px">
-				 	<a href="#">最新</a>
+				 	<a href="#">最新版</a>
 					<div class="h_nav" style="margin-left:20px">
 						<ul>
-							<li><a href="products.html">Single BedSingle BedSingle BedSingle Bed</a></li>
-							<li><a href="products.html">Poster Bed</a></li>
-							<li><a href="products.html">Sofa Cum Bed</a></li>
-							<li><a href="products.html">Bunk Bed</a></li>
-							<li><a href="products.html">King Size Bed</a></li>
-							<li><a href="products.html">Metal Bed</a></li>
-							<li><a href="products.html">Metal Bed</a></li>
+							<?php if(is_array($new) || $new instanceof \think\Collection || $new instanceof \think\Paginator): if( count($new)==0 ) : echo "" ;else: foreach($new as $key=>$list): ?>
+							<li><a href="<?php echo url('Kown/index_more',array('type_id'=>$list['type'],'id'=>$list['id'])); ?>"><?php echo $list['name']; ?></a></li>
+							<?php endforeach; endif; else: echo "" ;endif; ?>
 						</ul>	
 					</div>			
 			 	</div>
 			 	<div style="height:300px">
-				 	<a href="products.html">最热</a>
+				 	<a href="#">最热版</a>
 				 	<div class="h_nav" style="margin-left:20px">
 						<ul>
-							<li><a href="products.html">Single BedSingle BedSingle BedSingle Bed</a></li>
-							<li><a href="products.html">Poster Bed</a></li>
-							<li><a href="products.html">Sofa Cum Bed</a></li>
-							<li><a href="products.html">Bunk Bed</a></li>
-							<li><a href="products.html">King Size Bed</a></li>
-							<li><a href="products.html">Metal Bed</a></li>
-							<li><a href="products.html">Metal Bed</a></li>
+							<?php if(is_array($new) || $new instanceof \think\Collection || $new instanceof \think\Paginator): if( count($new)==0 ) : echo "" ;else: foreach($new as $key=>$list): ?>
+							<li><a href="<?php echo url('Kown/index_more',array('type_id'=>$list['type'],'id'=>$list['id'])); ?>"><?php echo $list['name']; ?></a></li>
+							<?php endforeach; endif; else: echo "" ;endif; ?>
 						</ul>	
 					</div>	
 			 	</div>
@@ -306,18 +298,22 @@
 			 <div class="col-md-3 ftr-grid">
 				 <h4>中药材知识库</h4>
 				 <ul>
-					 <li><a href="#">中药鉴别</a></li>
-					 <li><a href="#">中药养生</a></li>
-					 <li><a href="#">中药炮制</a></li>
-					 <li><a href="#">中药种植</a></li>
-					 <li><a href="#">中药美容</a></li>
-					 <li><a href="#">中药传说</a></li>					 
+					 <li><a href="<?php echo url('Kown/index',array('id'=>2)); ?>">中药鉴别</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>3)); ?>">中药养生</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>4)); ?>">中药炮制</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>5)); ?>">中药种植</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>6)); ?>">中药美容</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>1)); ?>">中药传说</a></li>
 				 </ul>
 			 </div>
 			 <div class="col-md-6 ftr-grid">
 				 <h4>中药传说</h4>
 				 <ul>
-				 	<li><a href=""><p>山一程，水一程，身向榆关那畔行，夜深千帐灯。</p>风一更，雪一更，聒碎乡心梦不成，故园无此声</a></li>
+				 	<li><a href="<?php echo url('Kown/index_more',array('type_id'=>1,'id'=>2)); ?>">
+						<p>中药材:大枣</p>荆棘赤心百益红，山东茌县史作贡。<br>
+						维生素丸是美誉，大枣汤将燥脏冲。<br>
+						略亚菖蒲通九窍，可和百药甘草同。<br>
+						保健药膳是良方，粥饼久食乐融融。</a></li>
 				 </ul>
 			 </div>
 			 <div class="clearfix"></div>

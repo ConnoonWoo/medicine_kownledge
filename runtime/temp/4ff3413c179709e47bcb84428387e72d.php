@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:100:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Kown/kownledge.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554219607;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554219607;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:100:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Kown/kownledge.html";i:1554637416;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554631409;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554636988;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -151,35 +151,35 @@
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药鉴别</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>2)); ?>">中药鉴别</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药养生</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>3)); ?>">中药美容</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药炮制</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>4)); ?>">中药炮制</a></li>
 									</ul>	
 								</div>												
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药种植</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>5)); ?>">中药养生</a></li>
 									</ul>	
 								</div>						
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('Kown/index'); ?>">中药美容</a></li>
+										<li><a href="<?php echo url('Kown/index',array('id'=>6)); ?>">中药种植</a></li>
 									</ul>	
 								</div>
 							</div>
@@ -187,8 +187,8 @@
 						</div>
 	    			</div>
 				</li>
-				<li><a class="color6" href="<?php echo url('Login/index'); ?>">登录/注册</a></li>
-				<li><a class="color7" href="#">登录后功能</a>
+				<?php if(\think\Session::get('name') != ""): ?>
+				<li><a class="color7" href="#">发布</a>
 					<div class="megapanel">
 						<div class="row">
 							<div class="col1">
@@ -221,7 +221,12 @@
 							</div>
 						</div>
 	    			</div>
-				</li>				
+				</li>
+				<li><a class="color6" href="<?php echo url('Login/login_out'); ?>"><?php echo \think\Session::get('name'); ?></a></li>
+				<?php else: ?>
+				<li><a class="color6" href="<?php echo url('Login/index'); ?>">登录/注册</a></li>
+				<?php endif; ?>
+
 			</ul> 
 		    <div class="search">
 			 <form>
@@ -236,51 +241,49 @@
 <!---->
 <div class="top-sellers">
 	 <div class="container">
-	 	<h3 style="margin-top:50px">中药鉴别</h3>
-	 	<h5>　　藏药起源于西藏，是中华民族——藏族的传统文化</h5>
+		 <div style="background: #f6f9f9;border: #e1eded 1px solid;padding-bottom:20px;margin-bottom: 2em;">
+	 		<h3 style="margin-top:50px"><?php echo $type['jy_name']; ?></h3>
+	 		<h5 style="line-height: 1.5em;">　　<?php echo $type['jy_content']; ?></h5>
+		 </div>
 		 <div class="sofas">
-		 	<div style="margin-top:30px;">
-		 		<a href="<?php echo url('Kown/index_more'); ?>">
-				 <div class="col-md-5 ">
-					 <img src="/medicine_kownledge/public/static/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
-			 </div>
-			
-			<div style="margin-top:30px;">
-				<a href="<?php echo url('Kown/index_more'); ?>">
-				 <div class="col-md-5 ">
-					 <img src="/medicine_kownledge/public/static/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
-			</div>
 
-			<div style="margin-top:30px;">
-				 <a href="<?php echo url('Kown/index_more'); ?>">
-				 <div class="col-md-5 ">
-					 <img src="/medicine_kownledge/public/static/images/banner1.jpg" alt=""/>
-				 </div>
-				 <div class="col-md-7">
-					 <p>好好学习，天天向上</p>
-					 <p style="margin-top:20px;">发布人：Connoon</p>
-					 <p>发布时间：2019-03-29</p>
-				 </div>
-				 <div class="clearfix"></div>
-				 </a>
+			 <div class="h_nav" style="margin-left:50px;">
+				 <ul>
+					 <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): if( count($lists)==0 ) : echo "" ;else: foreach($lists as $key=>$list): ?>
+					 <li>
+						 <?php if($id == 2): ?>
+						 <a href="<?php echo url('Kown/index_more',array('type_id'=>$id,'id'=>$list['jd_id'])); ?>" style="color:#069;">
+							 <?php echo $list['jd_name']; ?>的鉴定方法
+						 </a>
+						 <?php elseif($id == 3): ?>
+						 <a href="<?php echo url('Kown/index_more',array('type_id'=>$id,'id'=>$list['mr_id'])); ?>" style="color:#069;">
+							 <?php echo $list['mr_name']; ?>的美容功效及方法
+						 </a>
+						 <?php elseif($id == 4): ?>
+						 <a href="<?php echo url('Kown/index_more',array('type_id'=>$id,'id'=>$list['pz_id'])); ?>" style="color:#069;">
+							 <?php echo $list['pz_name']; ?>的炮制方法与标准
+						 </a>
+						 <?php elseif($id == 5): ?>
+						 <a href="<?php echo url('Kown/index_more',array('type_id'=>$id,'id'=>$list['ys_id'])); ?>" style="color:#069;">
+							 <?php echo $list['ys_name']; ?>的养生保健作用与方法
+						 </a>
+						 <?php elseif($id == 6): ?>
+						 <a href="<?php echo url('Kown/index_more',array('type_id'=>$id,'id'=>$list['zz_id'])); ?>" style="color:#069;">
+							 <?php echo $list['zz_name']; ?>种植技术与栽培管理
+						 </a>
+						 <?php elseif($id == 1): ?>
+						 <a href="<?php echo url('Kown/index_more',array('type_id'=>$id,'id'=>$list['cs_id'])); ?>" style="color:#069;">
+							 <?php echo $list['cs_name']; ?>的传说故事
+						 </a>
+						 <?php endif; ?>
+					 </li>
+					 <?php if($key % 6 == 0): ?>
+					 	<div style="margin-top: 1em;"></div>
+					 <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+				 </ul>
 			 </div>
 
+			<div><?php echo $lists->render(); ?></div>
 		 </div>
 	 </div>
 </div>
@@ -299,12 +302,12 @@
 			 <div class="col-md-3 ftr-grid">
 				 <h4>中药材知识库</h4>
 				 <ul>
-					 <li><a href="#">中药鉴别</a></li>
-					 <li><a href="#">中药养生</a></li>
-					 <li><a href="#">中药炮制</a></li>
-					 <li><a href="#">中药种植</a></li>
-					 <li><a href="#">中药美容</a></li>
-					 <li><a href="#">中药传说</a></li>					 
+					 <li><a href="<?php echo url('Kown/index',array('id'=>2)); ?>">中药鉴别</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>3)); ?>">中药养生</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>4)); ?>">中药炮制</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>5)); ?>">中药种植</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>6)); ?>">中药美容</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>1)); ?>">中药传说</a></li>
 				 </ul>
 			 </div>
 			 <div class="col-md-6 ftr-grid">
