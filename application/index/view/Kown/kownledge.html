@@ -2,7 +2,7 @@
 <!---->
 <div class="top-sellers">
 	 <div class="container">
-		 <div style="background: #f6f9f9;border: #e1eded 1px solid;padding-bottom:20px;margin-bottom: 2em;">
+		 <div style="background: #f6f9f9;border: #e1eded 1px solid;padding-bottom:20px;margin-bottom: 2em;margin-top: 2em;">
 	 		<h3 style="margin-top:50px">{$type.jy_name}</h3>
 	 		<h5 style="line-height: 1.5em;">　　{$type.jy_content}</h5>
 		 </div>
@@ -13,27 +13,27 @@
 					 {foreach name="lists" item="list"}
 					 <li>
 						 {if condition="$id eq 2"}
-						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.jd_id))}" style="color:#069;">
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.jd_id))}" style="color:#069;text-decoration: none;">
 							 {$list.jd_name}的鉴定方法
 						 </a>
 						 {elseif condition="$id eq 3" /}
-						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.mr_id))}" style="color:#069;">
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.mr_id))}" style="color:#069;text-decoration: none;">
 							 {$list.mr_name}的美容功效及方法
 						 </a>
 						 {elseif condition="$id eq 4" /}
-						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.pz_id))}" style="color:#069;">
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.pz_id))}" style="color:#069;text-decoration: none;">
 							 {$list.pz_name}的炮制方法与标准
 						 </a>
 						 {elseif condition="$id eq 5" /}
-						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.ys_id))}" style="color:#069;">
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.ys_id))}" style="color:#069;text-decoration: none;">
 							 {$list.ys_name}的养生保健作用与方法
 						 </a>
 						 {elseif condition="$id eq 6" /}
-						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.zz_id))}" style="color:#069;">
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.zz_id))}" style="color:#069;text-decoration: none;">
 							 {$list.zz_name}种植技术与栽培管理
 						 </a>
 						 {elseif condition="$id eq 1" /}
-						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.cs_id))}" style="color:#069;">
+						 <a href="{:url('Kown/index_more',array('type_id'=>$id,'id'=>$list.cs_id))}" style="color:#069;text-decoration: none;">
 							 {$list.cs_name}的传说故事
 						 </a>
 						 {/if}

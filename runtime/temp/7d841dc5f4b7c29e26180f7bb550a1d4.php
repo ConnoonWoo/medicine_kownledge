@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:103:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Medicine/medicine.html";i:1554219607;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1554631409;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554303203;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:103:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Medicine/medicine.html";i:1555855621;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1555758462;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554638676;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -71,22 +71,21 @@
 								<div class="h_nav">
 									<h4>道地药材</h4>
 									<ul>
-										<li><a href="<?php echo url('Medicine/index'); ?>">维药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">秦药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">藏药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">川药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">云药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">贵药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">广药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">海药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">云药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">南药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">浙药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">淮药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">怀药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">北药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">蒙药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">关药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 1)); ?>">维药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 2)); ?>">秦药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 3)); ?>">藏药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 4)); ?>">川药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 5)); ?>">云药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 6)); ?>">贵药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 7)); ?>">广药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 8)); ?>">海药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 9)); ?>">云药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 10)); ?>">浙药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 11)); ?>">淮药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 12)); ?>">怀药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 13)); ?>">北药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 14)); ?>">蒙药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 15)); ?>">关药</a></li>
 									</ul>	
 								</div>							
 							</div>
@@ -94,15 +93,15 @@
 								<div class="h_nav">
 									<h4>中药材库</h4>
 									<ul>
-										<li><a href="<?php echo url('Medicine/index'); ?>">解表药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">清热药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">泻下药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">祛风湿药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">化湿药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">利水渗湿药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">温里药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">理气药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">祛湿药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 16)); ?>">解表药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 17)); ?>">清热药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 18)); ?>">泻下药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 19)); ?>">祛风湿药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 20)); ?>">化湿药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 21)); ?>">利水渗湿药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 22)); ?>">温里药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 23)); ?>">理气药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 24)); ?>">祛湿药</a></li>
 									</ul>	
 								</div>							
 							</div>
@@ -110,15 +109,15 @@
 								<div class="h_nav">
 									<h4>中药材库</h4>
 									<ul>
-										<li><a href="<?php echo url('Medicine/index'); ?>">驱虫药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">止血药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">活血化瘀药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">化痰止咳平喘药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">安神药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">平肝息风药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">开窍药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">补虚药</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">收涩药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 25)); ?>">驱虫药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 26)); ?>">止血药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 27)); ?>">活血化瘀药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 28)); ?>">化痰止咳平喘药</a></li>
+										<!--<li><a href="<?php echo url('Medicine/index',array('id'=> 1)); ?>">安神药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 1)); ?>">平肝息风药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 1)); ?>">开窍药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 1)); ?>">补虚药</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 1)); ?>">收涩药</a></li>-->
 									</ul>
 								</div>
 							</div>
@@ -126,19 +125,19 @@
 								<div class="h_nav">
 									<h4>药用植物库</h4>
 									<ul>
-										<li><a href="<?php echo url('Medicine/index'); ?>">木兰科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">八角科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">五味子科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">番荔枝科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">樟科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">莲叶桐科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">毛茛(gen)科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">金鱼藻科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">睡莲科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">小檗(bo)科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">木通科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">防己科</a></li>
-										<li><a href="<?php echo url('Medicine/index'); ?>">马兜铃科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 29)); ?>">木兰科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 30)); ?>">八角科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 31)); ?>">五味子科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 32)); ?>">番荔枝科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 33)); ?>">樟科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 34)); ?>">莲叶桐科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 35)); ?>">毛茛(gen)科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 36)); ?>">金鱼藻科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 37)); ?>">睡莲科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 38)); ?>">小檗(bo)科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 39)); ?>">木通科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 40)); ?>">防己科</a></li>
+										<li><a href="<?php echo url('Medicine/index',array('id'=> 41)); ?>">马兜铃科</a></li>
 									</ul>	
 								</div>												
 							</div>	
@@ -201,21 +200,21 @@
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="products.html">发布资源GPS</a></li>
+										<li><a href="<?php echo url('After/create_gps'); ?>">发布资源GPS</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="products.html">发布中药</a></li>
+										<li><a href="<?php echo url('After/create_medicine'); ?>">发布中药</a></li>
 									</ul>	
 								</div>							
 							</div>
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="products.html">发布经验</a></li>
+										<li><a href="<?php echo url('After/create_suffer'); ?>">发布经验</a></li>
 									</ul>	
 								</div>							
 							</div>
@@ -241,76 +240,27 @@
 <!---->
 <div class="top-sellers">
 	 <div class="container">
-		 <h3 style="margin-top:50px">藏药</h3>
-		 <h5>　　藏药起源于西藏，是中华民族——藏族的传统文化</h5>
-		 <div class="seller-grids">
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="medicine_more.html">Carnival Doublecot Bed</a></h4>
-				 <span>ID: DB4790</span>
-				 <p>Rs. 25000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Home Bar Furniture</a></h4>
-				 <span>ID: BR4822</span>
-				 <p>Rs. 5000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">L-shaped Fabric Sofa set</a></h4>
-				 <span>ID: LF8560</span>
-				 <p>Rs. 45000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Ritz Glass Dinning Table </a></h4>
-				 <span>ID: DB4790</span>
-				 <p>Rs. 18000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Carnival Doublecot Bed</a></h4>
-				 <span>ID: DB4790</span>
-				 <p>Rs. 25000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Home Bar Furniture</a></h4>
-				 <span>ID: BR4822</span>
-				 <p>Rs. 5000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">L-shaped Fabric Sofa set</a></h4>
-				 <span>ID: LF8560</span>
-				 <p>Rs. 45000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Ritz Glass Dinning Table </a></h4>
-				 <span>ID: DB4790</span>
-				 <p>Rs. 18000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Carnival Doublecot Bed</a></h4>
-				 <span>ID: DB4790</span>
-				 <p>Rs. 25000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">Home Bar Furniture</a></h4>
-				 <span>ID: BR4822</span>
-				 <p>Rs. 5000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="<?php echo url('Medicine/index_more'); ?>"><img src="/medicine_kownledge/public/static/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="<?php echo url('Medicine/index_more'); ?>">L-shaped Fabric Sofa set</a></h4>
-				 <span>ID: LF8560</span>
-				 <p>Rs. 45000/-</p>
-			 </div>
+		 <div  style="background: #f6f9f9;border: #e1eded 1px solid;padding-bottom:20px;margin-bottom: 2em;margin-top: 2em;">
+		 	<h3 style="margin-top:25px"><?php echo $type['lm_name']; ?></h3>
+		 	<h5>　　<?php echo $type['lm_content']; ?></h5>
+		 </div>
+		 <div class=" seller-grids">
+			 <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): if( count($list)==0 ) : echo "" ;else: foreach($list as $key=>$data): ?>
+				 <div class="col-md-3 seller-grid" style="margin: 1em 0 1em 0;">
+					 <div style="border: 1px solid gray;padding: 2px;">
+					 <a href="<?php echo url('Medicine/index_more',array('zy_type'=>$data['zy_type'],'id'=>$data['zy_id'])); ?>" style="text-decoration: none;">
+						 <img src="/medicine_kownledge/public/static/uploads/<?php echo $data['zy_image']; ?>" style="padding: 1em 1em 1em 1em" alt=""/>
+						 <h4 style="text-align: left;padding-left: 1em;padding-bottom:1em;color: #585858"><?php echo $data['zy_name']; ?></h4>
+						 <p style="color: #7f7f7f;text-align: left;padding-left: 1em;">别名：<?php echo $data['zy_new_name']; ?></p>
+						 <p style="color: #7f7f7f;text-align: left;padding-left: 1em;">产区：<?php echo getTypeName($data['zy_type']); ?></p>
+						 <p style="color: #7f7f7f;text-align: left;padding-left: 1em;padding-bottom: 1em;line-height: 25px;height: 5em;">产地：<?php echo getNewData($data['zy_fenbu']); ?></p>
+					 </a>
+					 </div>
+				 </div>
+			 <?php endforeach; endif; else: echo "" ;endif; ?>
 			 <div class="clearfix"></div>
+			 <div><?php echo $list->render(); ?></div>
+
 		 </div>
 	 </div>
 </div>
@@ -329,18 +279,22 @@
 			 <div class="col-md-3 ftr-grid">
 				 <h4>中药材知识库</h4>
 				 <ul>
-					 <li><a href="#">中药鉴别</a></li>
-					 <li><a href="#">中药养生</a></li>
-					 <li><a href="#">中药炮制</a></li>
-					 <li><a href="#">中药种植</a></li>
-					 <li><a href="#">中药美容</a></li>
-					 <li><a href="#">中药传说</a></li>					 
+					 <li><a href="<?php echo url('Kown/index',array('id'=>2)); ?>">中药鉴别</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>3)); ?>">中药养生</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>4)); ?>">中药炮制</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>5)); ?>">中药种植</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>6)); ?>">中药美容</a></li>
+					 <li><a href="<?php echo url('Kown/index',array('id'=>1)); ?>">中药传说</a></li>
 				 </ul>
 			 </div>
 			 <div class="col-md-6 ftr-grid">
 				 <h4>中药传说</h4>
 				 <ul>
-				 	<li><a href=""><p>山一程，水一程，身向榆关那畔行，夜深千帐灯。</p>风一更，雪一更，聒碎乡心梦不成，故园无此声</a></li>
+				 	<li><a href="<?php echo url('Kown/index_more',array('type_id'=>1,'id'=>2)); ?>">
+						<p>中药材:大枣</p>荆棘赤心百益红，山东茌县史作贡。<br>
+						维生素丸是美誉，大枣汤将燥脏冲。<br>
+						略亚菖蒲通九窍，可和百药甘草同。<br>
+						保健药膳是良方，粥饼久食乐融融。</a></li>
 				 </ul>
 			 </div>
 			 <div class="clearfix"></div>

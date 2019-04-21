@@ -1,0 +1,72 @@
+{include file='Common/_head'}
+<!---->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="{:url('Index/index')}">主页</a></li>
+        <li class="active">发布</li>
+    </ol>
+    <div class="registration">
+        <div class="registration_left">
+            <h2><span> 发布药材GPS </span></h2>
+            <div class="registration_form">
+                <!-- Form -->
+                <form id="registration_form" action="#" method="post">
+                    <div>
+                        <label>
+                            <input type="email" tabindex="3" readonly>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="first name:" type="text" tabindex="1" required autofocus>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="last name:" type="text" tabindex="2" required autofocus>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="Mobile:" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="submit" value="修改" id="register-submit">
+                    </div>
+                </form>
+                <!-- /Form -->
+            </div>
+        </div>
+        <div class="registration_left">
+            <h2>修改密码</h2>
+            <div class="registration_form">
+                <!-- Form -->
+                <form id="registration_form" action="#" method="post">
+                    <div>
+                        <label>
+                            <input placeholder="old password" type="password" tabindex="4" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="new password" type="password" tabindex="4" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="retype new password" type="password" tabindex="4" required>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="submit" value="修改" id="register-submit">
+                    </div>
+                </form>
+                <!-- /Form -->
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!---->
+{include file='Common/_footer'}

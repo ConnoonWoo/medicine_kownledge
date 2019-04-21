@@ -2,76 +2,27 @@
 <!---->
 <div class="top-sellers">
 	 <div class="container">
-		 <h3 style="margin-top:50px">藏药</h3>
-		 <h5>　　藏药起源于西藏，是中华民族——藏族的传统文化</h5>
-		 <div class="seller-grids">
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="medicine_more.html">Carnival Doublecot Bed</a></h4>
-				 <span>ID: DB4790</span>
-				 <p>Rs. 25000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="{:url('Medicine/index_more')}">Home Bar Furniture</a></h4>
-				 <span>ID: BR4822</span>
-				 <p>Rs. 5000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="{:url('Medicine/index_more')}">L-shaped Fabric Sofa set</a></h4>
-				 <span>ID: LF8560</span>
-				 <p>Rs. 45000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="{:url('Medicine/index_more')}">Ritz Glass Dinning Table </a></h4>
-				 <span>ID: DB4790</span>
-				 <p>Rs. 18000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="{:url('Medicine/index_more')}">Carnival Doublecot Bed</a></h4>
-				 <span>ID: DB4790</span>
-				 <p>Rs. 25000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="{:url('Medicine/index_more')}">Home Bar Furniture</a></h4>
-				 <span>ID: BR4822</span>
-				 <p>Rs. 5000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="{:url('Medicine/index_more')}">L-shaped Fabric Sofa set</a></h4>
-				 <span>ID: LF8560</span>
-				 <p>Rs. 45000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="{:url('Medicine/index_more')}">Ritz Glass Dinning Table </a></h4>
-				 <span>ID: DB4790</span>
-				 <p>Rs. 18000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="{:url('Medicine/index_more')}">Carnival Doublecot Bed</a></h4>
-				 <span>ID: DB4790</span>
-				 <p>Rs. 25000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="{:url('Medicine/index_more')}">Home Bar Furniture</a></h4>
-				 <span>ID: BR4822</span>
-				 <p>Rs. 5000/-</p>
-			 </div>
-			 <div class="col-md-3 seller-grid">
-				 <a href="{:url('Medicine/index_more')}"><img src="__STATIC__/images/banner2.jpg" alt=""/></a>
-				 <h4><a href="{:url('Medicine/index_more')}">L-shaped Fabric Sofa set</a></h4>
-				 <span>ID: LF8560</span>
-				 <p>Rs. 45000/-</p>
-			 </div>
+		 <div  style="background: #f6f9f9;border: #e1eded 1px solid;padding-bottom:20px;margin-bottom: 2em;margin-top: 2em;">
+		 	<h3 style="margin-top:25px">{$type.lm_name}</h3>
+		 	<h5>　　{$type.lm_content}</h5>
+		 </div>
+		 <div class=" seller-grids">
+			 {foreach name="list" item="data"}
+				 <div class="col-md-3 seller-grid" style="margin: 1em 0 1em 0;">
+					 <div style="border: 1px solid gray;padding: 2px;">
+					 <a href="{:url('Medicine/index_more',array('zy_type'=>$data.zy_type,'id'=>$data.zy_id))}" style="text-decoration: none;">
+						 <img src="__STATIC__/uploads/{$data.zy_image}" style="padding: 1em 1em 1em 1em" alt=""/>
+						 <h4 style="text-align: left;padding-left: 1em;padding-bottom:1em;color: #585858">{$data.zy_name}</h4>
+						 <p style="color: #7f7f7f;text-align: left;padding-left: 1em;">别名：{$data.zy_new_name}</p>
+						 <p style="color: #7f7f7f;text-align: left;padding-left: 1em;">产区：{$data.zy_type|getTypeName=###}</p>
+						 <p style="color: #7f7f7f;text-align: left;padding-left: 1em;padding-bottom: 1em;line-height: 25px;height: 5em;">产地：{$data.zy_fenbu|getNewData=###}</p>
+					 </a>
+					 </div>
+				 </div>
+			 {/foreach}
 			 <div class="clearfix"></div>
+			 <div>{$list->render()}</div>
+
 		 </div>
 	 </div>
 </div>

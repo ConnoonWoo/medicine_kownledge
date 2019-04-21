@@ -1,0 +1,130 @@
+{include file='Common/_head'}
+<!---->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="{:url('Index/index')}">主页</a></li>
+        <li class="active">发布</li>
+    </ol>
+    <div class="registration">
+        <div class="registration_left">
+            <h2><span> 发布中药材 </span></h2>
+            <div class="registration_form">
+                <!-- Form -->
+                <form id="registration_form" action="{:url('After/add_medicine')}" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label>
+                            <select name="type" id="type" required>
+                                {foreach name="type" item="lm"}
+                                    <option value="{$lm.lm_id}">{$lm.lm_name}</option>
+                                {/foreach}
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="file" name="image" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="中药材名称:" name="name" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="中药材简介:" name="content" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="别名:" name="new_name" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="科:" name="kemu" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="中药学名:" name="study_name" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="所属功效区:" name="gongneng_type" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="分布区域:" name="fenbu" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="laiyuan" cols="100" rows="3" placeholder="来源:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="ruyao" cols="100" rows="3" placeholder="入药部位:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="jiagong" cols="100" rows="3" placeholder="采收加工:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="xingzhuang" cols="100" rows="3" placeholder="药材性状:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="xingwei" cols="100" rows="3" placeholder="性味归经:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="gongxiao" cols="100" rows="3" placeholder="药材功效:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="zhuzhi" cols="100" rows="3" placeholder="药材主治:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="yongfa" cols="100" rows="3" placeholder="用法用量:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="baocun" cols="100" rows="3" placeholder="贮藏保存:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="jinji" cols="100" rows="3" placeholder="用药禁忌:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="daodixing" cols="100" rows="3" placeholder="道地性:"></textarea>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="提交审核" id="submit">
+                    </div>
+                </form>
+                <!-- /Form -->
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!---->
+{include file='Common/_footer'}

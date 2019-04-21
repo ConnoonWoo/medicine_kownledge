@@ -54,9 +54,10 @@ class Login extends Controller {
         }
         $where['user_name'] = array('eq',$data['user_name']);
         $where['user_password'] = array('eq',md5($data['password']));
-        $select_data = Db::table('mk_user')->where($where)->select();
+        $select_data = Db::table('mk_user')->where($where)->find();
         if ($select_data) {
             Session::set('name',$data['user_name']);
+            Session::set('id',$select_data['user_id']);
             return $this->success('login success','Index/index');
         } else {
             return $this->error('login faild','Login/index');
@@ -66,6 +67,7 @@ class Login extends Controller {
 
     public function login_out() {
         Session::delete('name');
+        Session::delete('id');
         $name = Session::get('name');
         if (empty($name)) {
             return $this->success('login out success');
