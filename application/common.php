@@ -26,3 +26,13 @@ function getNewData($data) {
         return $data;
     }
 }
+
+function getMedicineMoreFenbu($data) {
+    if (strlen($data) > 8) {
+        $substr = substr($data, 0, 24);
+
+        return $substr . '...';
+    } else {
+        return $data;
+    }
+}

@@ -32,6 +32,18 @@ class Medicine extends Controller {
     }
 
     public function index_more() {
+        $data = input();
+        if (in_array($data['zy_type'], self::$COMMON_MAP)) {
+            $list = Db::table('mk_medicine_common')->where('zy_id', $data['id'])->find();
+        } elseif (in_array($data['zy_type'], self::$YAOYONG_MAP)) {
+            $list = Db::table('mk_medicine_yaoyong')->where('zy_id', $data['id'])->find();
+        }
+
+        $is_yaoyong = in_array($data['zy_type'], self::$YAOYONG_MAP) ? TRUE : FALSE;
+
+        $this->assign('is_yaoyong', $is_yaoyong);
+        $this->assign('list', $list);
+
         return $this->fetch('Medicine/medicine_more');
     }
 }

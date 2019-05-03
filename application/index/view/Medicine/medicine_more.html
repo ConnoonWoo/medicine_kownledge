@@ -5,7 +5,7 @@
 		 <ol class="breadcrumb">
 			 <li><a href="{:url('Index/index')}">主页</a></li>
 			 <li class="active">中药材百科</li>
-			 <li class="active">芦荟</li>
+			 <li class="active">{$list.zy_name}</li>
 		 </ol>
 		 <!-- start content -->	
 			<div class="col-md-9 det">
@@ -14,35 +14,28 @@
 						 <ul id="etalage">
 							<li>
 								<a href="#">
-									<img class="etalage_thumb_image" src="__STATIC__/images/ts2.jpg" class="img-responsive" />
-									<img class="etalage_source_image" src="__STATIC__/images/ts2.jpg" class="img-responsive" title="" />
+									<img class="etalage_thumb_image" src="__STATIC__/uploads/{$list.zy_image}" class="img-responsive" />
+									<img class="etalage_source_image" src="__STATIC__/uploads/{$list.zy_image}" class="img-responsive" title="" />
 								</a>
-							</li>
-							<li>
-								<img class="etalage_thumb_image" src="__STATIC__/images/ts2.jpg" class="img-responsive" />
-								<img class="etalage_source_image" src="__STATIC__/images/ts2.jpg" class="img-responsive" title="" />
-							</li>							
-						    <li>
-								<img class="etalage_thumb_image" src="__STATIC__/images/ts2.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" src="__STATIC__/images/ts2.jpg"class="img-responsive"  />
 							</li>
 						 </ul>
 						 <div class="clearfix"></div>		
 				      </div>
 				  </div>
 				  <div class="single-right">
-					 <h3>芦荟<span>(中药材)</span></h3>
-					 <div class="id"><h4>中药学名: ALOE</h4></div>
+					 <h3>{$list.zy_name}<span style="font-size: 14px;">(中药材)</span></h3>
+					 <div class="id"><h4>中药学名: {$list.zy_study_name}</h4></div>
 					  <div style="height:20px"></div>
 					  <div class="item-list col-md-6">
 						 <ul>
-							 <li><span style="color:red">中药名称</span>: 芦荟</li>
-							 <li>别名: 卢会、象胆</li>
-							 <li>科: 百合科</li>
-							 <li>所属功效区: 泻下药</li>
-							 <li>分布区域: 南美洲及西印度群</li>
+							 <li><span style="color:red">中药名称</span>: {$list.zy_name}</li>
+							 <li>别名: {$list.zy_new_name}</li>
+							 <li>科: {$list.zy_kemu}</li>
+							 <li>所属功效区: {$list.zy_gongneng_type}</li>
+							 <li>分布区域: {$list.zy_fenbu|getMedicineMoreFenbu=###}</li>
 						 </ul>
 					  </div>
+					  {if condition = " $is_yaoyong eq true"}
 					  <div class="item-list col-md-6">
 						 <ul>
 							 <li><span style="color:red">中药名称</span>: 芦荟</li>
@@ -52,18 +45,39 @@
 							 <li>分布区域: 南美洲及西印度群</li>
 						 </ul>
 					  </div>
+					  {/if}
 					  <div class="clearfix"></div>
 					  <div class="single-bottom1">
 						<h6>简介</h6>
-						<p class="prod-desc">　　芦荟为百合科植物。种植2-3年后即可收获。于8-9月将中下部生长良好的叶片分批采收。</p>
+						<p class="prod-desc">　　{$list.zy_content}</p>
 					 </div>					 
 				  </div>
 				  <div class="clearfix"></div>
 				  <div class="sofaset-info">
-						 <h3>来源</h3>
-						 <div>本品为百合科植物。种植2-3年后即可收获。于8-9月将中下部生长良好的叶片分批采收本品为百合科植物。种植2-3年后即可收获。于8-9月将中下部生长良好的叶片分批采收</div>
-						 <h3>分布产地</h3>
-						 <div>本品为百合科植物。种植2-3年后即可收获。于8-9月将中下部生长良好的叶片分批采收</div>
+					  <h3>来源</h3>
+					  <div>{$list.zy_laiyuan}</div>
+					  <h3>分布产地</h3>
+					  <div>{$list.zy_fenbu}</div>
+					  <h3>入药部位</h3>
+					  <div>{$list.zy_ruyao}</div>
+					  <h3>采收加工</h3>
+					  <div>{$list.zy_jiagong}</div>
+					  <h3>药材性状</h3>
+					  <div>{$list.zy_xingzhuang}</div>
+					  <h3>性味归经</h3>
+					  <div>{$list.zy_xingwei}</div>
+					  <h3>药材功效</h3>
+					  <div>{$list.zy_gongxiao}</div>
+					  <h3>药材主治</h3>
+					  <div>{$list.zy_zhuzhi}</div>
+					  <h3>用法用量</h3>
+					  <div>{$list.zy_yongfa}</div>
+					  <h3>贮藏保存</h3>
+					  <div>{$list.zy_baocun}</div>
+					  <h3>用药禁忌</h3>
+					  <div>{$list.zy_jinji}</div>
+					  <h3>道地性</h3>
+					  <div>{$list.zy_daodixing}</div>
 				  </div>				  					
 		    </div>
 			<div class="rsidebar span_1_of_left">
