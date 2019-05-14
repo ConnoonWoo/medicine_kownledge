@@ -1,0 +1,100 @@
+{include file='Common/_head'}
+<!---->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="{:url('Index/index')}">主页</a></li>
+        <li class="active">发布</li>
+    </ol>
+    <div class="registration">
+        <div class="registration_left">
+            <h2><span> 发布药用植物 </span></h2>
+            <div class="registration_form">
+                <!-- Form -->
+                <form id="registration_form" action="{:url('After/add_plant')}" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label>
+                            <select name="type" id="type" required>
+                                {foreach name="type" item="lm"}
+                                <option value="{$lm.lm_id}">{$lm.lm_name}</option>
+                                {/foreach}
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="file" name="image" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="植物名:" name="name" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="学名:" name="study_name" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="界:" name="jie" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="纲:" name="gang" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="目:" name="mu" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="属:" name="shu" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="别名:" name="new_name" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="门:" name="men" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="亚纲:" name="yagang" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input placeholder="科:" name="ke" type="text" tabindex="3" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="xingtai" cols="100" rows="3" placeholder="植物形态:"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="fenbu" cols="100" rows="3" placeholder="生境分布:"></textarea>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="提交审核" id="submit">
+                    </div>
+                </form>
+                <!-- /Form -->
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!---->
+{include file='Common/_footer'}

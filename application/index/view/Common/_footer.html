@@ -50,10 +50,10 @@ var point = new BMap.Point(107.3, 35.5);
 // 创建点坐标  
 map.centerAndZoom(point, 5);
 // 初始化地图，设置中心点坐标和地图级别
-//var opts = {anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
-//			type: BMAP_NAVIGATION_CONTROL_LARGE
-//		};
-//map.addControl(new BMap.NavigationControl(opts));
+var opts = {anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+			type: BMAP_NAVIGATION_CONTROL_LARGE
+		};
+map.addControl(new BMap.NavigationControl(opts));
 //添加控件
 map.enableScrollWheelZoom(true); 
 //var marker = new BMap.Marker(point);        // 创建标注    
@@ -79,12 +79,12 @@ customLayer.addEventListener('hotspotclick',callback);
 function callback(e)//单击热点图层
 	{
 			var customPoi = e.customPoi;//poi的默认字段
-			//var contentPoi=e.content;//poi的自定义字段
-			var content = '<p style="width:280px;margin:0;line-height:20px;">地址：' + customPoi.address + '<br/>价格:元'+'</p>';
+			var contentPoi=e.content;//poi的自定义字段
+			var content = '<p style="width:280px;margin:0;line-height:20px;">地址：' + customPoi.address + '<br/>'+ contentPoi.content + '<br/>' + contentPoi.main + '</p>';
 			var searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
 				title: customPoi.title, //标题
 				width: 290, //宽度
-				height: 40, //高度
+				height: 100, //高度
 				panel : "panel", //检索结果面板
 				enableAutoPan : true, //自动平移
 				enableSendToPhone: false, //是否显示发送到手机按钮

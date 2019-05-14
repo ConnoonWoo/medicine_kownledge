@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:103:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Medicine/medicine.html";i:1555855621;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1555758462;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554638676;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:103:"/Library/WebServer/Documents/medicine_kownledge/public/../application/index/view/Medicine/medicine.html";i:1555855621;s:88:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_head.html";i:1556966536;s:90:"/Library/WebServer/Documents/medicine_kownledge/application/index/view/Common/_footer.html";i:1554638676;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -207,9 +207,16 @@
 							<div class="col1">
 								<div class="h_nav">
 									<ul>
-										<li><a href="<?php echo url('After/create_medicine'); ?>">发布中药</a></li>
+										<li><a href="<?php echo url('After/create_medicine'); ?>">发布药材</a></li>
 									</ul>	
 								</div>							
+							</div>
+							<div class="col1">
+								<div class="h_nav">
+									<ul>
+										<li><a href="<?php echo url('After/create_medicine_yaoyong'); ?>">发布药用植物</a></li>
+									</ul>
+								</div>
 							</div>
 							<div class="col1">
 								<div class="h_nav">
